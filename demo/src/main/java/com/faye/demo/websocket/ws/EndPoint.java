@@ -1,4 +1,4 @@
-package com.faye.websocket.ws;
+package com.faye.demo.websocket.ws;
 
 import javax.servlet.http.HttpSession;
 import javax.websocket.*;

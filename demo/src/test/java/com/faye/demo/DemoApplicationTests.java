@@ -1,10 +1,10 @@
-package com.faye.websocket;
+package com.faye.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebsocketApplicationTests {
+class DemoApplicationTests {
 
     @Test
     void contextLoads() {
