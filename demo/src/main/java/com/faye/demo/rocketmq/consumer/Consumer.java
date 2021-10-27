@@ -20,6 +20,7 @@ public class Consumer {
         //订阅消息监听器
         consumer.subscribe("TopicTest","*");
         //4.注册消息监听器
+        // MessageListenerOrderly() 顺序消费
         consumer.registerMessageListener(new MessageListenerOrderly() {
             @Override
             public ConsumeOrderlyStatus consumeMessage(List<MessageExt> msgs, ConsumeOrderlyContext context) {
