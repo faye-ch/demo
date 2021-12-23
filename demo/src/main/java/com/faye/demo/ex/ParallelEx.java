@@ -1,8 +1,11 @@
 package com.faye.demo.ex;
 
 import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.function.IntConsumer;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -30,6 +33,9 @@ public class ParallelEx {
         System.out.println(list.stream().max((a,b)->a-b));
         System.out.println(Runtime.getRuntime().availableProcessors());
         System.out.println(System.currentTimeMillis()-start01);
+
+        int num = 5;
+        List<Integer> nums = new ArrayList<>();
 
 
 
