@@ -20,7 +20,6 @@ public class FlatMapEx {
 
         List<Integer> numList = dmLists.stream().flatMap(Collection::stream).collect(Collectors.toList());
         System.out.println(numList);
-
     }
 
 }

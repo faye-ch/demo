@@ -36,10 +36,6 @@ public class ParallelEx {
 
         int num = 5;
         List<Integer> nums = new ArrayList<>();
-
-
-
-
     }
 
 }

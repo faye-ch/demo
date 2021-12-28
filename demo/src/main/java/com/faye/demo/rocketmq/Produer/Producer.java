@@ -28,7 +28,7 @@ public class Producer {
             String body = sdf.format(date)+orderSteps.get(i);
             Message message = new Message("TopicTest", tags[i % tags.length], "key" + i, body.getBytes());
             System.out.println(orderSteps.get(i).toString());
-            /*
+            /**
              * 参数一：消息对象
              * 参数二：消息队列的选择器
              * 参数三：选择队列的业务标识(订单ID)

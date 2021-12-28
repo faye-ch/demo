@@ -9,7 +9,7 @@ import java.util.function.Consumer;
 /*
  * @Author cyf
  * LRU 最近少用算法
- * 为什么选择 LinkMap ? 因为 LinkMao 是有序存储 , 可以实现元素的先进先出功能
+ * 为什么选择 LinkHashMap ? 因为 LinkHashMao 是有序存储 , 可以实现元素的先进先出功能
  * HashMap 是无序的
  * @Date 2021/12/20
  **/
