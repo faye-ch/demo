@@ -26,6 +26,7 @@ public class JoinExample {
         @Override
         public void run(){
             try {
+                //A 线程插进来先执行
                 a.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
