@@ -61,6 +61,10 @@ public class Event<T> {
         B apply(A a);
     }
 
+    //<B> 声明B泛型
+    //Event<?> 泛型未知
+    //参数：FN<T,B> 需要传入一个函数式接口，传入FN接口
+    //在方法体内调用
     <B> Event<?> map(FN<T,B> f){
         return new Event<B>(f.apply(this.data));
     }
@@ -74,11 +78,11 @@ public class Event<T> {
                 new Event(10)
         );
 
+        // Transfroms::transfrom 就是 apply 的实现
         stream.map(event -> event.map(Transforms::transform))
                 .forEach(e->{
                     System.out.println(e.data);
                 });
-
 
     }
 
