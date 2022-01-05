@@ -2,12 +2,15 @@ package com.faye.demo.ex;
 
 import org.junit.Test;
 
-import javax.crypto.spec.PSource;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Random;
 
 /*
@@ -26,7 +29,7 @@ public class BufferExamples {
         FileOutputStream fout = new FileOutputStream(filename);
 
         long start = System.currentTimeMillis();
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 10000000; i++) {
             for (int j = 0; j < 5; j++) {
                 fout.write(97+r.nextInt(5));
             }
@@ -86,6 +89,40 @@ public class BufferExamples {
         }
         channel.close();
         System.out.println(System.currentTimeMillis() - start);
+    }
+
+    //中文乱码问题：utf-8 编码是不确定位数的，缓冲区 10 byte 有可能会把汉字拆分，造成乱码
+    @Test
+    public void test_chineser(){
+        String raw = "举头望明月";
+        //转换成 utf-8 的 byte
+        Charset utf8 = StandardCharsets.UTF_8;
+        byte[] bytes = utf8.encode(raw).array();
+
+        //从 bytes 中读出一部分数据
+        byte[] bytes2 = Arrays.copyOfRange(bytes, 0, 11);
+
+        //bytes2 中可能有乱码，如何读取正常的中文？
+        ByteBuffer byteBuffer = ByteBuffer.allocate(12);
+        CharBuffer charBuffer = CharBuffer.allocate(12);
+
+        //写入
+        byteBuffer.put(bytes2);
+        byteBuffer.flip();
+
+        //使用解码器 从byteBuffer 读取数据到 charBuffer
+        utf8.newDecoder().decode(byteBuffer,charBuffer,true);
+        charBuffer.flip();
+
+        char[] tmp = new char[charBuffer.length()];
+        if (charBuffer.hasRemaining()){
+            charBuffer.get(tmp);
+            System.out.println(new String(tmp));
+        }
+
+        System.out.println(byteBuffer.limit()-byteBuffer.position());
+
+
     }
 
 
