@@ -33,6 +33,7 @@ public class BufferExamples {
             for (int j = 0; j < 5; j++) {
                 fout.write(97+r.nextInt(5));
             }
+            fout.write(' ');
         }
 
         fout.close();
@@ -110,7 +111,7 @@ public class BufferExamples {
         byteBuffer.put(bytes2);
         byteBuffer.flip();
 
-        //使用解码器 从byteBuffer 读取数据到 charBuffer
+         //使用解码器 从byteBuffer 读取数据到 charBuffer
         utf8.newDecoder().decode(byteBuffer,charBuffer,true);
         charBuffer.flip();
 
