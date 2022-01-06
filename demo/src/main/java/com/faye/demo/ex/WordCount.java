@@ -53,6 +53,7 @@ public class WordCount {
 
     private Map<String,Integer> countByString(String str) {
         Map<String, Integer> map = new HashMap<>();
+        //读取字符工具类 默认空格为分隔符 可以指定分隔符号
         StringTokenizer tokenizer = new StringTokenizer(str);
         while (tokenizer.hasMoreTokens()){
             String s = tokenizer.nextToken();
@@ -137,6 +138,14 @@ public class WordCount {
         // P(不可多线程执行的任务)    NP(可多线程执行的任务)
         // 词频分析是可多线程执行的任务，但是从磁盘读取数据并不是可多线程执行的任务
         // 所以速度不能接近理论值
+    }
+
+    @Test
+    public void StringTokenizerTest(){
+        String str = "abc++abc";
+        StringTokenizer tokenizer = new StringTokenizer(str,"+");
+        System.out.println(tokenizer.nextToken());
+        System.out.println(tokenizer.nextToken());
     }
 
 
