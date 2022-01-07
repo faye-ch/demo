@@ -11,7 +11,7 @@ import java.util.List;
 
 /*
  * @Author cyf
- * @Description
+ * 分析 redis 批量提交与循环单个提交的效率
  * @Date 2022/1/7
  **/
 public class RedisPipeline {
@@ -56,7 +56,7 @@ public class RedisPipeline {
         long start = System.currentTimeMillis();
         for (int i = 0; i < list.size(); i++) {
             pipelined.lpush("list2",list.get(i));
-            if (i%1000==0){
+            if (i%10000==0){
                 pipelined.sync();
             }
         }
