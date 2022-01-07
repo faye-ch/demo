@@ -21,6 +21,7 @@ import java.util.concurrent.ForkJoinTask;
  **/
 public class WordCount {
 
+    //并行执行任务的框架，旨在将大任务拆分为各个小任务
     final ForkJoinPool pool = ForkJoinPool.commonPool();
 
     //单线程
@@ -108,7 +109,7 @@ public class WordCount {
         long position = 0;
         while (position<fileSize){
             long next = Math.min(position + chunkSize, fileSize);
-            CountTask task = new CountTask(filename, position, next);
+            CountTask task = new CountTask(filename,position, next);
             position = next;
             ForkJoinTask<Map<String, Integer>> future = pool.submit(task);
             list.add(future);
