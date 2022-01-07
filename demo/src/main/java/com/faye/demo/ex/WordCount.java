@@ -16,7 +16,7 @@ import java.util.concurrent.ForkJoinTask;
 
 /*
  * @Author cyf
- * 词频分析
+ * 词频分析:缓冲区的作用，多线程任务
  * @Date 2022/1/5
  **/
 public class WordCount {
