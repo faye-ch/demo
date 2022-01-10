@@ -12,6 +12,7 @@ import java.util.List;
 /*
  * @Author cyf
  * 分析 redis 批量提交与循环单个提交的效率
+ * https://blog.csdn.net/u011489043/article/details/78769428
  * @Date 2022/1/7
  **/
 public class RedisPipeline {
