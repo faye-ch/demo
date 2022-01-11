@@ -7,10 +7,19 @@ package com.faye.demo.ex.link;
  **/
 public class Node<E>{
     private Node<E> next;
+    private Node<E> pre;
     private E data;
 
     public Node(){
 
+    }
+
+    public Node<E> getPre() {
+        return pre;
+    }
+
+    public void setPre(Node<E> pre) {
+        this.pre = pre;
     }
 
     public Node(E data){

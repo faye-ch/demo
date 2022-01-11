@@ -16,4 +16,6 @@ public interface ILinkedList<E> {
 
     void print();
 
+
+
 }
