@@ -103,7 +103,7 @@ public class BufferExamples {
         //从 bytes 中读出一部分数据
         byte[] bytes2 = Arrays.copyOfRange(bytes, 0, 11);
 
-        //bytes2 中可能有乱码，如何读取正常的中文？
+        //bytes2 中可能有乱码，如何读取正常的中文 ?
         ByteBuffer byteBuffer = ByteBuffer.allocate(12);
         CharBuffer charBuffer = CharBuffer.allocate(12);
 

@@ -22,13 +22,13 @@ public interface Aspect {
     /**
      *
      * @param clazz 目标类 class 对象
-     * @param aspects 全限定名称数组
+     * @param aspects 全限定名称数组 为什么是可变参数 ? 因为 Aspect 可能有多个实现类
      * @param <T>
      * @return
      */
     static <T> T getProxy(Class<T> clazz,String ... aspects)throws Exception{
 
-        //根据全限定类名获取,切面实例
+        //根据全限定类名获取切面实例
         List<Try<Aspect>> aspectInsts = Arrays.stream(aspects).map(name -> Try.ofFailable(() -> {
             Class<?> aClass = Class.forName(name);
             return (Aspect) aClass.getConstructor().newInstance();
