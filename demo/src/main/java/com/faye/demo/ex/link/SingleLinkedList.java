@@ -5,10 +5,10 @@ import org.junit.Test;
 
 /*
  * @Author cyf
- * @Description
+ * 单向链表
  * @Date 2022/1/11
  **/
-public class SingleLinkedList<E> {
+public class SingleLinkedList<E> implements ILinkedList<E> {
 
     private Node<E> head;
 
@@ -21,17 +21,19 @@ public class SingleLinkedList<E> {
         last = head;
     }
 
+    @Override
     public Node<E> get(int index){
         if (index<0 || index>size){
             return null;
         }
-        Node<E> node = head.next;
+        Node<E> node = head.getNext();
         for (int i = 0; i < index; i++) {
-            node = node.next;
+            node = node.getNext();
         }
         return node;
     }
 
+    @Override
     public void add(E data){
         Node<E> node = new Node<>(data);
         last.setNext(node);
@@ -40,6 +42,7 @@ public class SingleLinkedList<E> {
     }
 
     //按指定位置插入元素，旧元素位置向后移动
+    @Override
     public void add(E data,int index){
         if (index < 0 || index > size || size ==0){
             return;
@@ -58,6 +61,7 @@ public class SingleLinkedList<E> {
         size ++;
     }
 
+    @Override
     public boolean remove(int index){
         if (index < 0 || index > size){
             return false;
@@ -71,9 +75,9 @@ public class SingleLinkedList<E> {
         //找到目标结点的上一个节点
         Node<E> preNode = get(index-1);
         //目标结点
-        Node<E> node = preNode.next;
+        Node<E> node = preNode.getNext();
         //目标结点的下一个结点
-        Node<E> next = node.next;
+        Node<E> next = node.getNext();
 
         //剔除目标结点 目标上一结点 与 目标当前结点链接
         preNode.setNext(next);
@@ -83,6 +87,7 @@ public class SingleLinkedList<E> {
     }
 
     //移除最后一个元素
+    @Override
     public void remove(){
         Node<E> preNode = get(size - 2);
         if(preNode==null){
@@ -94,10 +99,12 @@ public class SingleLinkedList<E> {
         size --;
     }
 
+    @Override
     public int getSize(){
         return size;
     }
 
+    @Override
     public void print(){
         StringBuilder builder = new StringBuilder("{");
         for (int i = 0; i < size; i++) {
@@ -107,35 +114,6 @@ public class SingleLinkedList<E> {
         System.out.println(builder.toString());
     }
 
-
-    private class Node<E>{
-        private Node<E> next;
-        private E data;
-
-        public Node(){
-
-        }
-
-        public Node(E data){
-            this.data = data;
-        }
-
-        public Node<E> getNext(){
-            return next;
-        }
-
-        public void setNext(Node<E> next){
-            this.next = next;
-        }
-
-        public E getData(){
-            return data;
-        }
-
-        public void setData(E data){
-            this.data = data;
-        }
-    }
 
     @Test
     public static void main(String[] args) {
