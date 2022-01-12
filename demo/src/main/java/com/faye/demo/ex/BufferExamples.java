@@ -123,7 +123,6 @@ public class BufferExamples {
 
         System.out.println(byteBuffer.limit()-byteBuffer.position());
 
-
     }
 
 
