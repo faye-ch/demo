@@ -3,6 +3,10 @@ package com.faye.demo.ex.link;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+
 /*
  * @Author cyf
  * 单向链表
@@ -114,6 +118,53 @@ public class SingleLinkedList<E> implements ILinkedList<E> {
         System.out.println(builder.toString());
     }
 
+    //根据条件查询结点
+    //断言表达式
+    //传入一个判断表达式
+    public List<Node<E>> query(Predicate<E> predicate){
+        List<Node<E>> nodeList = new ArrayList<>();
+        if (head ==null){
+            return nodeList;
+        }
+        Node<E> node = head.getNext();
+        while (node!=null){
+            if (predicate.test(node.getData())){
+                nodeList.add(node);
+            }
+            node = node.getNext();
+        }
+        return nodeList;
+    }
+
+    // O(n)
+    public void remove(Node<E> node){
+        if(head == null) {
+            return;
+        }
+
+        if(head == node) {
+            head = head.getNext();
+            return;
+        }
+
+        //这里的快慢指针的用处并不提高效率,而是删除某个结点后,方便前后结点连接,旨在记录目标结点的 pre 结点
+        //如果是下标删除，使用 get(index-1) 也可以
+        Node<E> slow = head;
+        Node<E> fast = head.getNext();
+
+        while(fast != node && fast != null) {
+            slow = fast;
+            fast = fast.getNext();
+        }
+        if(fast != null) {
+            slow.setNext(fast.getNext());
+            fast.setData(null);
+        }
+
+    }
+
+
+
 
     @Test
     public static void main(String[] args) {
@@ -121,11 +172,14 @@ public class SingleLinkedList<E> implements ILinkedList<E> {
         linkedList.add(1);
         linkedList.add(2);
         linkedList.add(3);
+        linkedList.add(4);
         linkedList.print();
-        linkedList.add(4,1);
-        linkedList.print();
-        linkedList.remove();
-        linkedList.print();
+        List<Node<Integer>> nodeList = linkedList.query(k -> k < 3);
+        nodeList.forEach(v-> System.out.println(v.getData()));
+//        linkedList.add(4,1);
+//        linkedList.print();
+//        linkedList.remove();
+//        linkedList.print();
     }
 
 }
