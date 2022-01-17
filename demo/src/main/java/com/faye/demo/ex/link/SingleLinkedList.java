@@ -163,10 +163,35 @@ public class SingleLinkedList<E> implements ILinkedList<E> {
 
     }
 
-
-
+    //判断链表是否有环
+    public boolean hasLooped(){
+        if (head==null || head.getNext()==null){
+            return false;
+        }
+        Node<E> slow = head;
+        Node<E> fast = head.getNext().getNext();
+        while (fast != null && fast.getNext() != null){
+            if (fast == slow){
+                return true;
+            }
+            slow = slow.getNext();
+            fast = fast.getNext().getNext();
+        }
+        return false;
+    }
 
     @Test
+    public void loop_test(){
+        SingleLinkedList<Integer> linkedList = new SingleLinkedList<>();
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+        linkedList.add(4);
+
+        linkedList.last.setNext(linkedList.head.getNext());
+        System.out.println(linkedList.hasLooped());
+    }
+
     public static void main(String[] args) {
         SingleLinkedList<Integer> linkedList = new SingleLinkedList<>();
         linkedList.add(1);
