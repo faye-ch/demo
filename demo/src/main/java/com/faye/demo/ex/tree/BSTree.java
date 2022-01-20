@@ -52,18 +52,43 @@ public class BSTree<T extends Comparable<T>> {
         }
     }
 
+    //先序遍历
+    //根节点 -> 左子树 -> 右子树
+    /**
+     *      5
+     *     / \
+     *    3   6
+     *   / \   \
+     *  2  4    8
+     *
+     *  遍历结果：532468
+     */
+    <T> void preOrder(BSTNode<T> node){
+        if (node ==null ){
+            return;
+        }
+        System.out.println(node.data);
+        preOrder(node.left);
+        preOrder(node.right);
+    }
+
+
     @Test
     public void print_test(){
-        BSTree<Integer> bsTree = new BSTree<>();
-        bsTree.add(1);
-        bsTree.add(5);
-        bsTree.add(11);
-        bsTree.add(4);
-        bsTree.add(3);
-        bsTree.add(-1);
-
+        BSTree<Integer> bsTree = buildTree();
         TreePrinter printer = new TreePrinter();
         printer.print(bsTree.root);
+    }
+
+    private BSTree<Integer> buildTree(){
+        BSTree<Integer> bsTree = new BSTree<>();
+        bsTree.add(5);
+        bsTree.add(3);
+        bsTree.add(2);
+        bsTree.add(4);
+        bsTree.add(6);
+        bsTree.add(8);
+        return bsTree;
     }
 
     @Test
@@ -72,5 +97,11 @@ public class BSTree<T extends Comparable<T>> {
         Integer num = 10;
         Integer num2 = 12;
         System.out.println(num2.compareTo(num));
+    }
+
+    @Test
+    public void proOrder_test(){
+        BSTree<Integer> bsTree = buildTree();
+        preOrder(bsTree.root);
     }
 }
