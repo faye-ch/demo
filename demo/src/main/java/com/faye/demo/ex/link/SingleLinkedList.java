@@ -1,9 +1,11 @@
 package com.faye.demo.ex.link;
 
 
+import com.google.common.collect.Sets;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -112,7 +114,8 @@ public class SingleLinkedList<E> implements ILinkedList<E> {
     public void print(){
         StringBuilder builder = new StringBuilder("{");
         for (int i = 0; i < size; i++) {
-            builder.append("["+get(i).getData()+"]");
+            String str = "["+get(i).getData()+"]";
+            builder.append(str);
         }
         builder.append("}");
         System.out.println(builder.toString());
@@ -178,6 +181,34 @@ public class SingleLinkedList<E> implements ILinkedList<E> {
             fast = fast.getNext().getNext();
         }
         return false;
+    }
+
+    //判断链表是否有环
+    public boolean hasLoopV2(){
+        if (head ==null || head.getNext() ==null){
+            return false;
+        }
+        HashSet<Node<E>> set = Sets.newHashSet();
+        Node<E> node = head.getNext();
+        while (node != null){
+            if (set.contains(node)){
+                return true;
+            }
+            set.add(node);
+            node = node.getNext();
+        }
+        return false;
+    }
+
+    @Test
+    public void loop_test_2(){
+        SingleLinkedList<Integer> linkedList = new SingleLinkedList<>();
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+        linkedList.add(4);
+        linkedList.last.setNext(linkedList.head.getNext());
+        System.out.println(linkedList.hasLoopV2());
     }
 
     @Test
