@@ -72,6 +72,27 @@ public class BSTree<T extends Comparable<T>> {
         preOrder(node.right);
     }
 
+    /**
+     * 后序遍历
+     * 左子树 -> 右子树 -> 根节点
+     *      5
+     *     / \
+     *    3   6
+     *   / \   \
+     *  2  4    8
+     *
+     *  遍历结果：243865
+     *
+     */
+    <T> void postOrder(BSTNode<T> node){
+        if (node ==null ){
+            return;
+        }
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.println(node.data);
+    }
+
 
     @Test
     public void print_test(){
@@ -103,5 +124,11 @@ public class BSTree<T extends Comparable<T>> {
     public void proOrder_test(){
         BSTree<Integer> bsTree = buildTree();
         preOrder(bsTree.root);
+    }
+
+    @Test
+    public void postOrder_test(){
+        BSTree<Integer> bsTree = buildTree();
+        postOrder(bsTree.root);
     }
 }
