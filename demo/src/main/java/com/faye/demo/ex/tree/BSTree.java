@@ -113,9 +113,20 @@ public class BSTree<T extends Comparable<T>> {
         inOrder(node.right);
     }
 
+    /**
+     * BFS 广度优先搜索算法
+     * 从根结点一层层，从左往右搜索
+     *
+     *      5
+     *     / \
+     *    3   6
+     *   / \   \
+     *  2  4    8
+     * 遍历结果：536248
+     */
+    <T> void bfs(BSTNode<T> node){
 
-
-
+    }
 
     @Test
     public void print_test(){
