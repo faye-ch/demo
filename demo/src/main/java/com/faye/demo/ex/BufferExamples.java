@@ -121,7 +121,7 @@ public class BufferExamples {
             System.out.println(new String(tmp));
         }
 
-        System.out.println(byteBuffer.limit()-byteBuffer.position());
+        System.out.println(byteBuffer.limit() - byteBuffer.position());
 
     }
 
