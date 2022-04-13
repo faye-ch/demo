@@ -13,12 +13,8 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class ProductSampleNeedServiceImpl implements IProductSampleNeedService {
-
-    @Autowired
-    private ProductSampleNeedMapper mapper;
-
     @Override
     public Long getById(Long id) {
-        return mapper.selectByPrimaryKey(id);
+        return null;
     }
 }
