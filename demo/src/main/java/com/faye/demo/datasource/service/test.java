@@ -3,6 +3,7 @@ package com.faye.demo.datasource.service;
 import com.faye.demo.datasource.dao.ProductSampleNeedMapper;
 import com.faye.demo.datasource.entity.ProductSampleNeed;
 import com.google.common.collect.Lists;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +45,8 @@ public class test {
         List<ProductSampleNeed> list = Lists.newArrayList();
         list.add(need2);
         list.add(need1);
-        List<ProductSampleNeed> list2 = list.stream().sorted(Comparator.comparing(ProductSampleNeed::getGmtCreated).reversed()).collect(Collectors.toList());
+        List<ProductSampleNeed> list2 = list.stream().sorted(Comparator.comparing(ProductSampleNeed::getGmtCreated)
+                .reversed()).collect(Collectors.toList());
         System.out.println();
     }
 

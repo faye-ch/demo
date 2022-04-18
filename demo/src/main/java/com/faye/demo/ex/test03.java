@@ -1,5 +1,7 @@
 package com.faye.demo.ex;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -30,9 +32,15 @@ public class test03 {
 //        System.out.println(b3/b4);
 //
 //        //
-        Integer b5 = 1;
-        Integer i1 = 0;
-        System.out.println(b5/i1);
+//        Integer b5 = 1;
+//        Integer i1 = 0;
+//        System.out.println(b5/i1);
+
+
+        String s = "abc";
+        if (StringUtils.isBlank(s) || s.length()<2){
+            System.out.println("ok");
+        }
 
 //        double number = 15;
 //        double numbers = 25;

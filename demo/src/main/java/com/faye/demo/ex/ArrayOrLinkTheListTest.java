@@ -22,8 +22,35 @@ public class ArrayOrLinkTheListTest {
 
         //按照位置插入
 //        test.linkedlistOnAdd();
-        test.arraylistOnAdd();
+//        test.arraylistOnAdd();
 
+        //获取
+        test.arrayGet();
+//        test.linkedGet();
+
+    }
+
+    private void linkedGet() {
+        List<String> linkedList = Lists.newLinkedList();
+        for (int i = 0; i < 1000000; i++) {
+            linkedList.add(i+"");
+        }
+        long startDate = System.currentTimeMillis();
+        String s = linkedList.get(linkedList.size()/2 - 1);
+        System.out.println(s);
+        long results = System.currentTimeMillis()-startDate;
+        System.out.println("linked获取 :"+results);
+    }
+
+    private void arrayGet() {
+        List<String> arrayList = Lists.newArrayList();
+        for (int i = 0; i < 1000000; i++) {
+            arrayList.add(i+"");
+        }
+        long startDate = System.currentTimeMillis();
+        String s = arrayList.get(arrayList.size() - 1);
+        long results = System.currentTimeMillis()-startDate;
+        System.out.println("array获取 :"+results);
     }
 
     private void arraylistOnAdd() {
