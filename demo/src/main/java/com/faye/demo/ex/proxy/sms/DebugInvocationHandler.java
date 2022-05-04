@@ -6,6 +6,7 @@ import java.lang.reflect.Method;
 /*
  * @Author cyf
  * jdk 动态代理类:传入目标类的 class对象
+ * 增强逻辑在这里写
  * @Date 2022/1/6
  **/
 public class DebugInvocationHandler<T> implements InvocationHandler {
@@ -21,7 +22,7 @@ public class DebugInvocationHandler<T> implements InvocationHandler {
         System.out.println("before");
         Object tarObj = clazz.newInstance();
         Object result = method.invoke(tarObj, args);
-        System.out.println("atfer");
+        System.out.println("after");
         return result;
     }
 }

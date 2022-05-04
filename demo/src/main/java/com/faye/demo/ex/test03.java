@@ -1,12 +1,10 @@
 package com.faye.demo.ex;
 
+import com.google.common.collect.Maps;
 import org.apache.commons.lang3.StringUtils;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /*
  * @Author cyf
@@ -16,37 +14,36 @@ import java.util.Map;
 public class test03 {
 
     public static void main(String[] args) {
-//        //map get null
-//        Map<String,String> map = new HashMap<>();
-//        String s = map.get(null);
-//        System.out.println();
-//
-//        //NaN
-//        double b1 = 0.0;
-//        double b2 = 0.0;
-//        System.out.println(b1/b2);
-//
-//        //Infinite
-//        double b3 = 1.0;
-//        double b4 = 0.0;
-//        System.out.println(b3/b4);
-//
-//        //
-//        Integer b5 = 1;
-//        Integer i1 = 0;
-//        System.out.println(b5/i1);
-
-
-        String s = "abc";
-        if (StringUtils.isBlank(s) || s.length()<2){
-            System.out.println("ok");
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        List<Integer> list = new ArrayList<>();
+        Map<Integer, Integer> map = Maps.newHashMap();
+        while (num>0){
+            int single = num%10;
+            num = num/10;
+            list.add(single);
+            Integer mapNum = map.get(single);
+            if (mapNum==null){
+                map.put(single,1);
+            }else {
+                map.put(single, mapNum+1);
+            }
         }
 
-//        double number = 15;
-//        double numbers = 25;
-//        System.out.println(1-(number/numbers));
-
-
+        List<Integer> list1 = new ArrayList<>();
+        int max = 0;
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            Integer value = entry.getValue();
+            if (value>max){
+                max = value;
+                list1.clear();
+                list1.add(entry.getKey());
+            }else if (value==max){
+                list1.add(entry.getKey());
+            }
+        }
+        System.out.println(Arrays.toString(list.toArray()));
+        System.out.println(Arrays.toString(list1.toArray()));
     }
 
 }

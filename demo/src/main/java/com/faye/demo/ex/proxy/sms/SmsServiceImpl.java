@@ -2,8 +2,8 @@ package com.faye.demo.ex.proxy.sms;
 
 /*
  * @Author cyf
- * @Description
  * @Date 2022/1/6
+ * 目标类
  **/
 public class SmsServiceImpl implements ISmsService {
 

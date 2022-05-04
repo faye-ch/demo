@@ -5,6 +5,7 @@ import java.lang.reflect.Proxy;
 /*
  * @Author cyf
  * 获取代理对象的工厂类
+ * 运行时生成代理对象
  * @Date 2022/1/6
  **/
 public class JdkProxyFactory {
