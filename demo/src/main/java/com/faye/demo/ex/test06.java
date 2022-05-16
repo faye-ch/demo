@@ -8,8 +8,10 @@ package com.faye.demo.ex;
 public class test06 {
 
     public static void main(String[] args) {
-        String s = "Txue";
-        System.out.println(s.substring(0,s.length()-1));
+        int a = 98+1;
+//        char c = (char) a+1;
+        //需要括号包起来
+        char c1 = (char) (a+1);
     }
 
 }
