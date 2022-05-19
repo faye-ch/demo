@@ -8,7 +8,7 @@ package com.faye.demo.ex.niuk;
 public class ClimbStais {
 
     public static void main(String[] args) {
-        int num = climbStairs(4);
+        int num = climbStairs(3);
         System.out.println(num);
     }
 
@@ -18,7 +18,7 @@ public class ClimbStais {
         if (n==2) return 2;
         int[] step = new int[n];
         step[0] = 1;
-        step[1] = 2;
+        step[1] = 3;
         for (int i = 2; i < n; i++) {
             step[i] = step[i-1] + step[i-2];
         }
