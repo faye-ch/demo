@@ -13,7 +13,6 @@ public class dk004 {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
 
-
     }
 
 }

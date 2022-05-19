@@ -1,5 +1,8 @@
 package com.faye.demo.ex;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * @Author cyf
  * @Description
@@ -8,9 +11,8 @@ package com.faye.demo.ex;
 public class test06 {
 
     public static void main(String[] args) {
-        String str = "aabcddd";
-        String b = str.replace("b", "");
-        System.out.println(b);
+        List<Integer> list = new ArrayList<>();
+
     }
 
 }
