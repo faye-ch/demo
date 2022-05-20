@@ -2,7 +2,7 @@ package com.faye.demo.ex.niuk;
 
 /*
  * @Author cyf
- * @Description
+ * @Description 第一间房子和最后一间房子不同同事偷
  * @Date 2022/5/5
  **/
 public class RobII {

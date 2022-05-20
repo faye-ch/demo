@@ -2,8 +2,8 @@ package com.faye.demo.ex.niuk;
 
 /*
  * @Author cyf
- * @Description
  * @Date 2022/5/4
+ * 第一间房子和最后一间房子不同时偷
  **/
 public class Rob {
 
