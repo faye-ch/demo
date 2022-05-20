@@ -1,4 +1,4 @@
-package com.faye.demo.ex.niuk;
+package com.faye.demo.algo.dp;
 
 /*
  * @Author cyf

@@ -1,4 +1,4 @@
-package com.faye.demo.algo;
+package com.faye.demo.algo.dp;
 
 /*
  * @Author cyf

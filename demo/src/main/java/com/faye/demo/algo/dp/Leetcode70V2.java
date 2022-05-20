@@ -1,4 +1,6 @@
-package com.faye.demo.algo;
+package com.faye.demo.algo.dp;
+
+import com.faye.demo.algo.dp.Leetcode70;
 
 /*
  * @Author cyf

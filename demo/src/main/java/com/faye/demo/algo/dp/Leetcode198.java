@@ -1,14 +1,14 @@
-package com.faye.demo.algo;
+package com.faye.demo.algo.dp;
 
 /*
  * @Author cyf
  * @Date 2022/5/20
- * 动态规划 滚动数组
+ * 数组动态规划
  **/
-public class Leetcode198V2 {
+public class Leetcode198 {
 
     public static void main(String[] args) {
-        int[] num = {1,2,3,1};
+        int[] num = {2,7,9,3,1};
         int rob = new Leetcode198().rob(num);
         System.out.println(rob);
     }
@@ -20,15 +20,16 @@ public class Leetcode198V2 {
         if (nums.length==2){
             return Math.max(nums[0],nums[1]);
         }
-        int first = nums[0];
-        int second = Math.max(nums[0],nums[1]);
-
+        int[] dp = new int[nums.length];
+        dp[0] = nums[0];
+        dp[1] = Math.max(nums[0],nums[1]);
+        int max = 0;
         for (int i = 2; i < nums.length; i++) {
-            int temp = second;
-            second = Math.max(nums[i]+first,second);
-            first = temp;
+            dp[i] = Math.max(nums[i]+dp[i-2],dp[i-1]);
+            max = Math.max(max,dp[i]);
         }
-        return second;
+        return max;
+
     }
 
 }
