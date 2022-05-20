@@ -4,6 +4,7 @@ package com.faye.demo.algo.dp;
  * @Author cyf
  * @Date 2022/5/20
  *
+ * 第一间房子和最后一间房子不能同时偷
  * [2,3,2] = 3
  * [1,2,3,1] = 4
  *
