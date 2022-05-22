@@ -20,6 +20,10 @@ public class Leetcode300 {
       * i=6 j=3,101 5  Y dp6=3  dp[6]=max(dp[6]=2,dp[3]+1) = 3
       * i=6 j=4,101 8  Y dp6=4  dp[6]=max(dp[6]=3,dp[4]+1) = 4
       * i=6 j=5,101 7  Y dp6=4  dp[6]=max(dp[6]=4,dp[6]+1) = 4
+      *
+      * 总结
+      * 关键点1: 遍历方式 -> 遍历长度
+      * 关键点2: dp[i] = Max(dp[i],dp[j]+1) dp[i]代表内层遍历的上一次的最大值，dp[j]+1代表当前，dp[j]为历史记录
       */
     public static void main(String[] args) {
         int[] nums = {10,9,2,5,8,7,101};
