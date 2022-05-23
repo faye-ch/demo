@@ -1,5 +1,7 @@
 package com.faye.demo.algo.dp;
 
+import java.util.Scanner;
+
 /*
  * @Author cyf
  * @Description
@@ -8,7 +10,7 @@ package com.faye.demo.algo.dp;
 public class NKHJ24 {
 
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
     }
 
 }
