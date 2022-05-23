@@ -16,6 +16,9 @@ public class HJ24 {
             left[0] = 1;            //最左边的数设为1
             right[n - 1] = 1;        //最右边的数设为1
             //计算每个位置左侧的最长递增
+            //nums[i] > nums[j] : dp[i] = max(dp[i],dp[j]+1)
+            //dp[i] 上一次的累加最大值
+            //dp[j]+1,nums[i] > nums[j]说明nums[i]比dp[j]上累计的数都要大 因此在dp[j]+1
             for (int i = 0; i < n; i++) {
                 left[i] = 1;
                 for (int j = 0; j < i; j++) {
