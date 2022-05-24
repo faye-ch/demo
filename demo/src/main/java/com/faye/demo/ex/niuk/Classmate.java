@@ -11,6 +11,11 @@ import java.util.Scanner;
  **/
 public class Classmate {
 
+    /**
+     * 思路 ： 遇到 N 翻转标志位，Y不处理->继承上次的标志位
+     *
+     */
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
