@@ -1,5 +1,9 @@
 package com.faye.demo.algo.doubel_pion;
 
+ /*
+  * 快慢指针
+  * 总有一款会相遇
+  */
 public class Leetcode141V2 {
 
     public static void main(String[] args) {
