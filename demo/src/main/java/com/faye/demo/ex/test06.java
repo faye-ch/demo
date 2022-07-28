@@ -1,7 +1,9 @@
 package com.faye.demo.ex;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /*
  * @Author cyf
@@ -11,8 +13,15 @@ import java.util.List;
 public class test06 {
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-
+        String s = "s";
+        ThreadLocal threadLocal = new ThreadLocal();
+        threadLocal.get();
+        
+        if (true){
+            String s1="";
+        }else {
+            String s1="";
+        }
     }
 
 }

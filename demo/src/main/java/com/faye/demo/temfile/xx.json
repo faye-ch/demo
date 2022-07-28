@@ -1,0 +1,72 @@
+{
+  "msg":"ok",
+  "result":[
+    {
+      "damageDate":"2022-07-21",
+      "damageCode":"A17.0+",
+      "feAcceptNo":"0000696127",
+      "reportDate":"2022-07-21",
+      "claimDate":"2022-07-21",
+      "damageName":"结核性脑膜炎",
+      "intermediaryCode":"080000000314",
+      "policyNo":"600112220220000000046082926",
+      "registNo":"70000020000202230000013920",
+      "caseType":"6",
+      "minPolicyNo":"600112220220000000046082926"
+    },
+    {
+      "cancelDate":"",
+      "feAcceptNo":"0000696082",
+      "damageAddress":"北京市-市辖区-东城区",
+      "damageName":"意外",
+      "policyNo":"6370110101920210000077",
+      "registNo":"700010401202256629989507",
+      "caseType":"0",
+      "damageDate":"2022-07-21",
+      "damageCode":"02",
+      "reportDate":"2022-07-21",
+      "applyNo":"00002173",
+      "intermediaryCode":"080000000314",
+      "minPolicyNo":"6370110101920210000077"
+    }
+  ],
+  "code":"200"
+}
+
+{
+  "msg":"ok",
+  "result":[
+    {
+      "cancelDate":"",
+      "feAcceptNo":"700010401202235721496868",
+      "damageAddress":"北京市-市辖区-东城区",
+      "damageName":"",
+      "policyNo":"600112220220000000046082926",
+      "registNo":"700010401202235721496868",
+      "caseType":"1",
+      "damageDate":"2022-07-21",
+      "damageCode":"",
+      "reportDate":"2022-07-21",
+      "applyNo":"00002230",
+      "intermediaryCode":"080000000314",
+      "cancelReason":"ceshixia ",
+      "minPolicyNo":"600112220220000000046082926"
+    },
+    {
+      "cancelDate":"",
+      "feAcceptNo":"0000696082",
+      "damageAddress":"北京市-市辖区-东城区",
+      "damageName":"意外",
+      "policyNo":"6370110101920210000077",
+      "registNo":"700010401202256629989507",
+      "caseType":"0",
+      "damageDate":"2022-07-21",
+      "damageCode":"02",
+      "reportDate":"2022-07-21",
+      "applyNo":"00002173",
+      "intermediaryCode":"080000000314",
+      "minPolicyNo":"6370110101920210000077"
+    }
+  ],
+  "code":"200"
+}

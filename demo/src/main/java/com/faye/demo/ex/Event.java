@@ -1,5 +1,7 @@
 package com.faye.demo.ex;
 
+import org.aspectj.lang.annotation.Before;
+
 import java.util.stream.Stream;
 
 /*
@@ -14,6 +16,7 @@ import java.util.stream.Stream;
  *      结合律 ：Optional(100)|op1|opt2...|Optional<?> a*b*c = a*(b*c)
  *      单元位 ：empty * any = empty  a*e = e*a = a
  **/
+
 public class Event<T> {
 
     T data;

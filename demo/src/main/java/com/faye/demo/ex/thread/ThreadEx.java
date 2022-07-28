@@ -1,5 +1,7 @@
 package com.faye.demo.ex.thread;
 
+import java.util.concurrent.Callable;
+
 /*
  * @Author cyf
  * @Description 继承 Thread 的方式不能共享实例变量

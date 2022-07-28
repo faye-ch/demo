@@ -18,17 +18,19 @@ import java.util.List;
 public class ObjectFactory {
 
     public static <T> T newInstance(Class<T> clazz)throws Exception{
+        //获取标注在目标类上的注解(注解值是代理增强类)
         Annotation[] annotations = clazz.getAnnotations();
         List<IAspect> list = new ArrayList<>();
 
         for (Annotation annotation : annotations) {
             if (annotation instanceof Aspect){
                 Class type = ((Aspect) annotation).type();
-                IAspect aspect = (IAspect)type.getConstructor().newInstance();
+                IAspect aspect = (IAspect)type.getConstructor().newInstance();//代理增强类实例
                 list.add(aspect);
             }
         }
         T tarObj = clazz.getConstructor().newInstance();
+        //Proxy.newProxyInstance 三个参数:目标类的类加载器、目标类的接口、代理方法的实现
         return (T)Proxy.newProxyInstance(
                 clazz.getClassLoader(),
                 clazz.getInterfaces(),

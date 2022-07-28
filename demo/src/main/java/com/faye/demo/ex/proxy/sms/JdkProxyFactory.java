@@ -1,5 +1,7 @@
 package com.faye.demo.ex.proxy.sms;
 
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+
 import java.lang.reflect.Proxy;
 
 /*
