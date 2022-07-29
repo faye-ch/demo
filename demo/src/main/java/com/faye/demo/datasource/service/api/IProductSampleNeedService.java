@@ -2,6 +2,8 @@ package com.faye.demo.datasource.service.api;
 
 import com.faye.demo.datasource.entity.ProductSampleNeed;
 
+import java.util.List;
+
 /*
  * @Author cyf
  * @Description
@@ -9,6 +11,8 @@ import com.faye.demo.datasource.entity.ProductSampleNeed;
  **/
 public interface IProductSampleNeedService {
 
-    Long getById(Long id);
+    ProductSampleNeed getById(Long id);
+
+    List<ProductSampleNeed> getByList();
 
 }
