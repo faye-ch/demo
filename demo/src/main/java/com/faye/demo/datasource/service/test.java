@@ -2,6 +2,7 @@ package com.faye.demo.datasource.service;
 
 import com.faye.demo.datasource.dao.ProductSampleNeedMapper;
 import com.faye.demo.datasource.entity.ProductSampleNeed;
+import com.faye.demo.datasource.service.api.IProductSampleNeedService;
 import com.google.common.collect.Lists;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,6 +25,8 @@ public class test {
     
     @Autowired
     private ProductSampleNeedMapper mapper;
+    @Autowired
+    private IProductSampleNeedService service;
     
     @Test
     public void selectTest(){
@@ -152,6 +155,13 @@ public class test {
         List<ProductSampleNeed> list2 = list.stream().sorted(Comparator.comparing(ProductSampleNeed::getGmtCreated)
                 .reversed()).collect(Collectors.toList());
         System.out.println();
+    }
+    
+    @Test
+    public void dyDbTest(){
+        List<ProductSampleNeed> byList = service.getByList();
+        System.out.println(byList.size());
+        System.out.println(byList.size());
     }
 
 }
