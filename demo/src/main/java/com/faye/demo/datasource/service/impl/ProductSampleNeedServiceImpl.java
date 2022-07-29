@@ -1,7 +1,14 @@
 package com.faye.demo.datasource.service.impl;
 
+import com.faye.demo.datasource.dao.ProductSampleNeedMapper;
+import com.faye.demo.datasource.dbswitch.Db;
+import com.faye.demo.datasource.dbswitch.DbType;
+import com.faye.demo.datasource.entity.ProductSampleNeed;
 import com.faye.demo.datasource.service.api.IProductSampleNeedService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /*
  * @Author cyf
@@ -10,8 +17,19 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class ProductSampleNeedServiceImpl implements IProductSampleNeedService {
+    
+    @Autowired
+    private ProductSampleNeedMapper mapper;
+    
     @Override
-    public Long getById(Long id) {
-        return null;
+    @Db(value = DbType.MASTER)
+    public ProductSampleNeed getById(Long id) {
+        return mapper.getById(id);
+    }
+
+    @Override
+    @Db(value = DbType.MASTER)
+    public List<ProductSampleNeed> getByList() {
+        return mapper.selectOneTable();
     }
 }

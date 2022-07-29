@@ -18,4 +18,6 @@ public interface ProductSampleNeedMapper {
     List<ProductSampleNeed> selectOneTable();
 
     void batchInsert(@Param("list") Collection<ProductSampleNeed> list);
+
+    ProductSampleNeed getById(@Param("id") Long id);
 }

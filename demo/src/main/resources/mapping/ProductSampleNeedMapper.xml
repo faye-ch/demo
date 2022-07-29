@@ -174,7 +174,9 @@
       #{item.modifiedBy,jdbcType=VARCHAR}, #{item.gmtModified,jdbcType=TIMESTAMP}, #{item.detail,jdbcType=LONGVARCHAR}
       )
     </foreach>
-      
-    
   </insert>
+  <select id="getById" resultMap="BaseResultMap">
+    select * from product_sample_need
+    where id = #{id}
+  </select>
 </mapper>
