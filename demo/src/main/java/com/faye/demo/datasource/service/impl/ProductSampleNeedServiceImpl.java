@@ -16,19 +16,25 @@ import java.util.List;
  * @Date 2022/1/14
  **/
 @Service
-public class ProductSampleNeedServiceImpl implements IProductSampleNeedService {
+public class ProductSampleNeedServiceImpl  implements IProductSampleNeedService {
     
     @Autowired
     private ProductSampleNeedMapper mapper;
-    
+
+    @Db(value = DbType.SLAVE)
     @Override
-    @Db(value = DbType.MASTER)
     public ProductSampleNeed getById(Long id) {
-        return mapper.getById(id);
+        ProductSampleNeed need = null;
+        try{
+            need = mapper.getById(id);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return need;
     }
 
     @Override
-    @Db(value = DbType.MASTER)
+    @Db(value = DbType.SLAVE)
     public List<ProductSampleNeed> getByList() {
         return mapper.selectOneTable();
     }

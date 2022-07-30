@@ -159,9 +159,8 @@ public class test {
     
     @Test
     public void dyDbTest(){
-        List<ProductSampleNeed> byList = service.getByList();
-        System.out.println(byList.size());
-        System.out.println(byList.size());
+        ProductSampleNeed byId = service.getById(1L);
+        System.out.println();
     }
 
 }
