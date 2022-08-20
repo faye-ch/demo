@@ -1,0 +1,35 @@
+{
+  "msg": "ok",
+  "result": [
+    {
+      "damageAddress": "",
+      "damageName": "疾病",
+      "hosInfoList": [
+        {
+          "registNo": "700010401202181813708167",
+          "hosName": "北京市昌平区东小口社区卫生服务中心",
+          "hosCode": "北京市昌平区东小口社区卫生服务中心"
+        }
+      ],
+      "kindInfoList": [
+        {
+          "kindCode": "1019018",
+          "policyNo": "10463001900247392358",
+          "registNo": "700010401202181813708167",
+          "sumPaid": 0
+        }
+      ],
+      "policyNo": "10463001900247392358",
+      "registNo": "700010401202181813708167",
+      "caseType": "6",
+      "damageDate": "2021-09-27",
+      "damageCode": "01",
+      "reportDate": "2021-09-27",
+      "claimDate": "2021-09-27",
+      "applyNo": "00260396",
+      "intermediaryCode": "080000000314",
+      "minPolicyNo": "10463001900247392358"
+    }
+  ],
+  "code": "200"
+}

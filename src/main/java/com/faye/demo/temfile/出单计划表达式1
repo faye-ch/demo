@@ -1,0 +1,38 @@
+{
+    "appKey": "10001",
+    "serviceName": "zhongan.open.individual.generic.underwriting",
+    "timestamp": "*cv*|string|call(CallService).formatNowTime(#yyyyMMddHHmmssSSS#)",
+    "bizContent":{
+  "channelCode": "EY3AZ38",
+  "productCode": "*cv*|string|_getPlanCode.data.productCode",
+  "orderNo": "*cv*|string|body.order_no",
+  "effectiveDate": "*cv*|string|call().dateTimeTo(body.policy_begin_date,#yyyyMMddHHmmss#)",
+"expiryDate":"*cv*|string|$endTime=call().addSecond(body.policy_end_date,#-1#);call().dateTimeTo($endTime,#yyyyMMddHHmmss#)",
+  "applyNum":"1",
+  "policyHolder": {
+    "name": "*cv*|String|body.applier.name",
+    "certType": "*cv*|string|body.applier.certification_type>>{1=>I,3=>P,%other%=>100}",
+    "certNo": "*cv*|string|body.applier.certification_no",
+    "gender": "*cv*|string|body.applier.sex>>{1=>M,2=>F}",
+    "birthday": "*cv*|String|call().dateTo(body.applier.birthday,#yyyyMMdd#)",
+    "phoneNo": "*cv*|string|body.applier.mobile",
+    "email": "*cv*|string|body.applier.email"
+  },
+  "insureds=body.insured": [{
+    "productCode": "*cv*|string|_getPlanCode.data.productCode",
+    "name": "*cv*|string|body.insured.name",
+    "certType": "*cv*|string|body.insured.certification_type>>{1=>I,3=>P,%other%=>100}",
+    "certNo": "*cv*|string|body.insured.certification_no",
+    "gender": "*cv*|string|body.insured.sex>>{1=>M,2=>F}",
+    "birthday": "*cv*|String|call().dateTo(body.insured.birthday,#yyyyMMdd#)",
+    "relationToPH":"*cv*|string|body.insured.insured_relation>>{0=>0,5=>1,2=>2,1=>3}",
+"phoneNo":"*cv*|string|body.insured.mobile",
+    "email": "*cv*|string|body.insured.email"
+
+  }]
+},
+    "signType": "RSA",
+    "charset": "UTF-8",
+    "version": "*cv*|String|call(CallService).getConfig(#zabx.gateway.version#)",
+    "format": "json"
+}

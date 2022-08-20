@@ -1,0 +1,2222 @@
+{
+  "msg": "ok",
+  "data": [
+    {
+      "topic": "xrk_mall_pullRenewal_fail_send_email",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_pullRenewal_fail_send_email##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_long_insure_privilege_status",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-tags-api": {
+          "name": "xrk-tags-api",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "topic_long_insure_privilege_status##xrk-tags-api##http://192.168.30.10:7060/tags/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "reader_admin_update_article_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "reader_admin_update_article_success##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_sync_policy_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-drp": {
+          "name": "xrk-mall-drp",
+          "callbackUrl": "http://192.168.31.10:8911/api/v1/order/policyOrder/mc",
+          "description": "xrk_mall_sync_policy_success##xrk-mall-drp##http://192.168.31.10:8911/api/v1/order/policyOrder/mc"
+        }
+      }
+    },
+    {
+      "topic": "divide_order_notify_or_pay_fail",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "divide_order_notify_or_pay_fail##xrk-mall##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_policy_feedback_send_collect_email",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "topic_policy_feedback_send_collect_email##xrk-mall-msg##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_channel_product_update_age_config",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "topic_channel_product_update_age_config##xrk-mall-msg##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_sale_task_activity_policy_monitor_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "a_crm_scheduler": {
+          "name": "a_crm_scheduler",
+          "callbackUrl": "http://192.168.30.10:3037/acrm/scheduler/api/v1/mc/message/activity",
+          "description": "xrk_sale_task_activity_policy_monitor_success##a_crm_scheduler##http://192.168.30.10:3037/acrm/scheduler/api/v1/mc/message/activity"
+        }
+      }
+    },
+    {
+      "topic": "topic_app_alter_account",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "service_api_prod": {
+          "name": "service_api_prod",
+          "callbackUrl": "http://192.168.30.79:3033/api/v1/wos/alter_agent_account",
+          "description": "topic_app_alter_account##service_api_prod##http://192.168.30.79:3033/api/v1/wos/alter_agent_account"
+        }
+      }
+    },
+    {
+      "topic": "topic_certificate_no_status_check_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-promote-web-lottery": {
+          "name": "bxr-promote-web-lottery",
+          "callbackUrl": "http://192.168.30.10:8023/incrAgentLuckdraw/certification/callBack",
+          "description": "topic_certificate_no_status_check_success##bxr-promote-web-lottery##http://192.168.30.10:8023/incrAgentLuckdraw/certification/callBack"
+        },
+        "xrk_activity_center_lawyer": {
+          "name": "xrk_activity_center_lawyer",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/activity/policy/lawyer_license_monitor",
+          "description": "topic_certificate_no_status_check_success##xrk_activity_center_lawyer##http://192.168.30.10:8931/api/v1/activity/policy/lawyer_license_monitor"
+        },
+        "bxr-promote-web": {
+          "name": "bxr-promote-web",
+          "callbackUrl": "http://192.168.30.10:8023/double11/certification/callBack",
+          "description": "topic_certificate_no_status_check_success##bxr-promote-web##http://192.168.30.10:8023/double11/certification/callBack"
+        },
+        "sale-task-api-sign-lawyer": {
+          "name": "sale-task-api-sign-lawyer",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/users/sale/tasks/sign_lawyer",
+          "description": "topic_certificate_no_status_check_success##sale-task-api-sign-lawyer##http://192.168.30.10:8931/api/v1/users/sale/tasks/sign_lawyer"
+        },
+        "xrk-wallet-msg_certificate_status_check": {
+          "name": "xrk-wallet-msg_certificate_status_check",
+          "callbackUrl": "http://192.168.30.10:8952/wallet/message",
+          "description": "topic_certificate_no_status_check_success##xrk-wallet-msg_certificate_status_check##http://192.168.30.10:8952/wallet/message"
+        },
+        "xrk-tags-api": {
+          "name": "xrk-tags-api",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "topic_certificate_no_status_check_success##xrk-tags-api##http://192.168.30.10:7060/tags/mc/notify"
+        },
+        "xrk-drpx-api": {
+          "name": "xrk-drpx-api",
+          "callbackUrl": "http://192.168.31.10:8980/api/v1/red/signSyncRedtoWallet",
+          "description": "topic_certificate_no_status_check_success##xrk-drpx-api##http://192.168.31.10:8980/api/v1/red/signSyncRedtoWallet"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_surrender_idv_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_mall": {
+          "name": "xrk_mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/policy/send/idv/surrender/sms",
+          "description": "xrk_mall_surrender_idv_success##xrk_mall##http://192.168.31.10:9480/mall/policy/send/idv/surrender/sms"
+        },
+        "bxr-api-idv-surrender": {
+          "name": "bxr-api-idv-surrender",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "xrk_mall_surrender_idv_success##bxr-api-idv-surrender##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "topic_send_msg_bayiding",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "topic_send_msg_bayiding##xrk-mall-msg##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "new_customer_clue",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "new_customer_clue##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "topic_user_intention_products_info",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_customer_backend": {
+          "name": "xrk_customer_backend",
+          "callbackUrl": "http://192.168.30.10:3039/customer_backend/api/v1/message/groupon/insurance/intention",
+          "description": "topic_user_intention_products_info##xrk_customer_backend##http://192.168.30.10:3039/customer_backend/api/v1/message/groupon/insurance/intention"
+        }
+      }
+    },
+    {
+      "topic": "xrk_sale_task_completed",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "sale_task": {
+          "name": "sale_task",
+          "callbackUrl": "http://192.168.31.10:8931/api/v1/users/sale/tasks/complete",
+          "description": "xrk_sale_task_completed##sale_task##http://192.168.31.10:8931/api/v1/users/sale/tasks/complete"
+        }
+      }
+    },
+    {
+      "topic": "xrk_idv_sale_task_expires_soon",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api-sale-task-remind": {
+          "name": "bxr-api-sale-task-remind",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "xrk_idv_sale_task_expires_soon##bxr-api-sale-task-remind##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "USER_COMPANY_CHANGE",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_tags": {
+          "name": "xrk_tags",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "USER_COMPANY_CHANGE##xrk_tags##http://192.168.30.10:7060/tags/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "topic_sale_task_toast",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api-sale-task": {
+          "name": "bxr-api-sale-task",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "topic_sale_task_toast##bxr-api-sale-task##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_wallet_unsafe_withdraw",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_wallet_msg_consumer": {
+          "name": "xrk_wallet_msg_consumer",
+          "callbackUrl": "http://192.168.31.10:8952/wallet/message",
+          "description": "xrk_wallet_unsafe_withdraw##xrk_wallet_msg_consumer##http://192.168.31.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "reader_admin_pre_delete_article_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "reader-api": {
+          "name": "reader-api",
+          "callbackUrl": "http://192.168.30.10:27000/reader/mc/callback",
+          "description": "reader_admin_pre_delete_article_success##reader-api##http://192.168.30.10:27000/reader/mc/callback"
+        }
+      }
+    },
+    {
+      "topic": "long_insurance_grant_success_topic",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-promote-invitation": {
+          "name": "bxr-promote-invitation",
+          "callbackUrl": "http://192.168.30.10:8023/invitation/long_insurance/award_authorize",
+          "description": "long_insurance_grant_success_topic##bxr-promote-invitation##http://192.168.30.10:8023/invitation/long_insurance/award_authorize"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_pay_fail",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "支付失败短信主题": {
+          "name": "支付失败短信主题",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_pay_fail##支付失败短信主题##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_repay_send_cs_email",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_repay_send_cs_email##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "reader_admin_pre_create_article_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "reader-api": {
+          "name": "reader-api",
+          "callbackUrl": "http://192.168.30.10:27000/reader/mc/callback",
+          "description": "reader_admin_pre_create_article_success##reader-api##http://192.168.30.10:27000/reader/mc/callback"
+        }
+      }
+    },
+    {
+      "topic": "topic_group_insure_privilege_status",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-tags-api": {
+          "name": "xrk-tags-api",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "topic_group_insure_privilege_status##xrk-tags-api##http://192.168.30.10:7060/tags/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "topic_xrk_license_free_tax_withdraw",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_financial_admin_xrk_license_free_tax_withdraw": {
+          "name": "xrk_financial_admin_xrk_license_free_tax_withdraw",
+          "callbackUrl": "http://192.168.30.10:3036/fbss/api/v1/sync_tax_id_card",
+          "description": "topic_xrk_license_free_tax_withdraw##xrk_financial_admin_xrk_license_free_tax_withdraw##http://192.168.30.10:3036/fbss/api/v1/sync_tax_id_card"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_admin_surrender",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-admin": {
+          "name": "xrk-mall-admin",
+          "callbackUrl": "http://192.168.31.10:8911/api/v1/order/surrender/mc",
+          "description": "xrk_mall_admin_surrender##xrk-mall-admin##http://192.168.31.10:8911/api/v1/order/surrender/mc"
+        }
+      }
+    },
+    {
+      "topic": "DELETE_ACCOUNT",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-order-api": {
+          "name": "xrk-order-api",
+          "callbackUrl": "http://192.168.31.10:8940/api/v1/order/delete_account_update_order",
+          "description": "DELETE_ACCOUNT##xrk-order-api##http://192.168.31.10:8940/api/v1/order/delete_account_update_order"
+        }
+      }
+    },
+    {
+      "topic": "migration_app_prize_sale_task_ticket",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {}
+    },
+    {
+      "topic": "xrk_idv_update_agent_notification",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_bss": {
+          "name": "xrk_bss",
+          "callbackUrl": "http://192.168.30.10:3035/acrm/api/v1/idv/agents",
+          "description": "xrk_idv_update_agent_notification##xrk_bss##http://192.168.30.10:3035/acrm/api/v1/idv/agents"
+        },
+        "bxr-api-idv": {
+          "name": "bxr-api-idv",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "xrk_idv_update_agent_notification##bxr-api-idv##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "sync_lawyer_license_im_message",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {}
+    },
+    {
+      "topic": "xrk_mall_renewalFee_erro_send_email",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_renewalFee_erro_send_email##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_free_tax_notice",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_wallet": {
+          "name": "xrk_wallet",
+          "callbackUrl": "http://192.168.30.10:8952/wallet/message",
+          "description": "topic_free_tax_notice##xrk_wallet##http://192.168.30.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_handle_danger_distributor",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "topic_handle_danger_distributor##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_renewal_policy_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/batchOrder/message",
+          "description": "xrk_mall_renewal_policy_success##xrk-mall##http://192.168.31.10:9480/mall/batchOrder/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_order_sync_elasticsearch",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message/order/sync_elasticsearch",
+          "description": "topic_order_sync_elasticsearch##xrk-mall-msg##http://192.168.30.10:9480/mall/message/order/sync_elasticsearch"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_offline_policy_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_offline_policy_success##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_issue_policy_idv_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_mall": {
+          "name": "xrk_mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/policy/send/idv/sms",
+          "description": "xrk_mall_issue_policy_idv_success##xrk_mall##http://192.168.31.10:9480/mall/policy/send/idv/sms"
+        }
+      }
+    },
+    {
+      "topic": "logion_changed",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "logion_changed##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "divide_order_instalment_edr",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "divide_order_instalment_edr##xrk-mall##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_channel_product_update_class",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "topic_channel_product_update_class##xrk-mall-msg##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "group_checkfail_message",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "group_checkfail_message##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "cps_wd_issue_xrk_drp",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "cps_wd_issue_xrk_drp##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "bms_update_point",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "a_crm_scheduler": {
+          "name": "a_crm_scheduler",
+          "callbackUrl": "http://192.168.30.10:3037/acrm/scheduler/api/v1/mc/message/member_level",
+          "description": "bms_update_point##a_crm_scheduler##http://192.168.30.10:3037/acrm/scheduler/api/v1/mc/message/member_level"
+        },
+        "xrk_tags": {
+          "name": "xrk_tags",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "bms_update_point##xrk_tags##http://192.168.30.10:7060/tags/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_pay_result",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api-pay-result": {
+          "name": "bxr-api-pay-result",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "xrk_pay_result##bxr-api-pay-result##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_admin_product_status",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_cmall_admin_api_prod": {
+          "name": "xrk_cmall_admin_api_prod",
+          "callbackUrl": "http://192.168.30.10:9012/recommend/product/syncStatus",
+          "description": "xrk_mall_admin_product_status##xrk_cmall_admin_api_prod##http://192.168.30.10:9012/recommend/product/syncStatus"
+        }
+      }
+    },
+    {
+      "topic": "topic_policy_feedback_send_email",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "a_crm_scheduler": {
+          "name": "a_crm_scheduler",
+          "callbackUrl": "http://192.168.30.10:3037/acrm/scheduler/api/v1/mall/policy_feedback",
+          "description": "topic_policy_feedback_send_email##a_crm_scheduler##http://192.168.30.10:3037/acrm/scheduler/api/v1/mall/policy_feedback"
+        }
+      }
+    },
+    {
+      "topic": "xrk_idv_fact_assess_result",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr_api_formal_assess": {
+          "name": "bxr_api_formal_assess",
+          "callbackUrl": "http://192.168.30.10:7022/bxr/mc/notify",
+          "description": "xrk_idv_fact_assess_result##bxr_api_formal_assess##http://192.168.30.10:7022/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "prod_test_topic_1",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "prod_test_consumer_luke": {
+          "name": "prod_test_consumer_luke",
+          "callbackUrl": "http://192.168.14.127:9090/api/v1/test/testMessageCenter",
+          "description": "prod_test_topic_1##prod_test_consumer_luke##http://192.168.14.127:9090/api/v1/test/testMessageCenter"
+        }
+      }
+    },
+    {
+      "topic": "UPGRADE_ACCOUNT",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-drp": {
+          "name": "xrk-drp",
+          "callbackUrl": "http://192.168.30.10:8905/monitor/distributor_base_update",
+          "description": "UPGRADE_ACCOUNT##xrk-drp##http://192.168.30.10:8905/monitor/distributor_base_update"
+        },
+        "xrk_wallet_withdraw_consumer": {
+          "name": "xrk_wallet_withdraw_consumer",
+          "callbackUrl": "http://192.168.31.10:8953/wallet/monitor/base_info_update",
+          "description": "UPGRADE_ACCOUNT##xrk_wallet_withdraw_consumer##http://192.168.31.10:8953/wallet/monitor/base_info_update"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_openApi_surrender_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_customer_backend": {
+          "name": "xrk_customer_backend",
+          "callbackUrl": "http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/cancel_orders",
+          "description": "xrk_mall_openApi_surrender_success##xrk_customer_backend##http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/cancel_orders"
+        }
+      }
+    },
+    {
+      "topic": "topic_channel_product_up_down",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "topic_channel_product_up_down##xrk-mall-msg##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "new_proposal",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "new_proposal##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_admin_update_policy_failure",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-promote-invitation": {
+          "name": "bxr-promote-invitation",
+          "callbackUrl": "http://192.168.30.10:8023/invitation/order/update_policy_failure",
+          "description": "xrk_mall_admin_update_policy_failure##bxr-promote-invitation##http://192.168.30.10:8023/invitation/order/update_policy_failure"
+        },
+        "xrk-sale-task-api": {
+          "name": "xrk-sale-task-api",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/activity/policy/policy_failure",
+          "description": "xrk_mall_admin_update_policy_failure##xrk-sale-task-api##http://192.168.30.10:8931/api/v1/activity/policy/policy_failure"
+        }
+      }
+    },
+    {
+      "topic": "test_yace",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "mc_scheduler": {
+          "name": "mc_scheduler",
+          "callbackUrl": "http://192.168.30.173:3071/api/v1/debug/testTopic",
+          "description": "test_yace##mc_scheduler##http://192.168.30.173:3071/api/v1/debug/testTopic"
+        }
+      }
+    },
+    {
+      "topic": "DRP_BASE_COMMISSION_COMMIT",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-promote-invitation": {
+          "name": "bxr-promote-invitation",
+          "callbackUrl": "http://192.168.30.10:8023/invitation/award/callBack",
+          "description": "DRP_BASE_COMMISSION_COMMIT##bxr-promote-invitation##http://192.168.30.10:8023/invitation/award/callBack"
+        },
+        "xrk_activity_center_policy": {
+          "name": "xrk_activity_center_policy",
+          "callbackUrl": "http://192.168.31.10:8931/api/v1/activity/policy/commission_monitor",
+          "description": "DRP_BASE_COMMISSION_COMMIT##xrk_activity_center_policy##http://192.168.31.10:8931/api/v1/activity/policy/commission_monitor"
+        },
+        "xrk-sale-task-api-order-commission-prod": {
+          "name": "xrk-sale-task-api-order-commission-prod",
+          "callbackUrl": "http://192.168.31.10:8931/api/v1/users/sale/tasks/order_commission/consume",
+          "description": "DRP_BASE_COMMISSION_COMMIT##xrk-sale-task-api-order-commission-prod##http://192.168.31.10:8931/api/v1/users/sale/tasks/order_commission/consume"
+        },
+        "xrk-drpx-api": {
+          "name": "xrk-drpx-api",
+          "callbackUrl": "http://192.168.31.10:8980/api/v1/m_commission_trades/add/message",
+          "description": "DRP_BASE_COMMISSION_COMMIT##xrk-drpx-api##http://192.168.31.10:8980/api/v1/m_commission_trades/add/message"
+        },
+        "bxr-promote-first-order": {
+          "name": "bxr-promote-first-order",
+          "callbackUrl": "http://192.168.30.10:8023/freshRedPackageActivity/baseCommission/reward_callback/202003",
+          "description": "DRP_BASE_COMMISSION_COMMIT##bxr-promote-first-order##http://192.168.30.10:8023/freshRedPackageActivity/baseCommission/reward_callback/202003"
+        }
+      }
+    },
+    {
+      "topic": "M_NEW_ACCOUNT",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-drp-web-api": {
+          "name": "xrk-drp-web-api",
+          "callbackUrl": "http://192.168.30.10:8908/api/v1/distributor/register",
+          "description": "M_NEW_ACCOUNT##xrk-drp-web-api##http://192.168.30.10:8908/api/v1/distributor/register"
+        }
+      }
+    },
+    {
+      "topic": "insurance_renew_financial_notice",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/long/policy/renewal_sync",
+          "description": "insurance_renew_financial_notice##xrk-mall-msg##http://192.168.30.10:9480/mall/long/policy/renewal_sync"
+        }
+      }
+    },
+    {
+      "topic": "topic_certificate_exist_check",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-app-admin-license-exist-check": {
+          "name": "bxr-app-admin-license-exist-check",
+          "callbackUrl": "http://192.168.30.10:8021/bxr/admin/mc/notify",
+          "description": "topic_certificate_exist_check##bxr-app-admin-license-exist-check##http://192.168.30.10:8021/bxr/admin/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_renewal_policy_fail",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/batchOrder/message",
+          "description": "xrk_mall_renewal_policy_fail##xrk-mall##http://192.168.31.10:9480/mall/batchOrder/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_sale_task_activity_correct_amount",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_mall_msg_trade_correct": {
+          "name": "xrk_mall_msg_trade_correct",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_sale_task_activity_correct_amount##xrk_mall_msg_trade_correct##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_idv_pre_assess_result",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api-idv-preassess": {
+          "name": "bxr-api-idv-preassess",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "xrk_idv_pre_assess_result##bxr-api-idv-preassess##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "reader_admin_delete_article_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "reader_admin_delete_article_success##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "push_mass_msg",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "weixin-api": {
+          "name": "weixin-api",
+          "callbackUrl": "http://192.168.30.10:7013/api/mc/notify",
+          "description": "push_mass_msg##weixin-api##http://192.168.30.10:7013/api/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_idv_sale_task_complete_to_proceed",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api-sale-task-return-proceed": {
+          "name": "bxr-api-sale-task-return-proceed",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "xrk_idv_sale_task_complete_to_proceed##bxr-api-sale-task-return-proceed##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_coupon_expire_notify",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-coupon-admin-api": {
+          "name": "xrk-coupon-admin-api",
+          "callbackUrl": "http://192.168.31.10:9484/api/v1/coupons/message/expire_notification",
+          "description": "xrk_coupon_expire_notify##xrk-coupon-admin-api##http://192.168.31.10:9484/api/v1/coupons/message/expire_notification"
+        }
+      }
+    },
+    {
+      "topic": "proTestTopic",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "proTestConsumer": {
+          "name": "proTestConsumer",
+          "callbackUrl": "http://127.0.0.1:3071/api/v1/debug/testTopic",
+          "description": "proTestTopic##proTestConsumer##http://127.0.0.1:3071/api/v1/debug/testTopic"
+        }
+      }
+    },
+    {
+      "topic": "topic_policy_feedback_send_message",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "topic_policy_feedback_send_message##xrk-mall-msg##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "DRP_GROUPORDER_CANCEL_NOTICE",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-drp-web": {
+          "name": "xrk-drp-web",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "DRP_GROUPORDER_CANCEL_NOTICE##xrk-drp-web##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "reader_api_hot_article",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "reader_api_hot_article##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "topic_tax_verify",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_wallet": {
+          "name": "xrk_wallet",
+          "callbackUrl": "http://192.168.30.10:8952/wallet/message",
+          "description": "topic_tax_verify##xrk_wallet##http://192.168.30.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_new_danger_notice",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "service_api": {
+          "name": "service_api",
+          "callbackUrl": "http://192.168.30.10:3033/api/v1/wo/danger/agent",
+          "description": "xrk_mall_new_danger_notice##service_api##http://192.168.30.10:3033/api/v1/wo/danger/agent"
+        },
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/insurance_account_work/danger/agent/callBack",
+          "description": "xrk_mall_new_danger_notice##bxr-api##http://192.168.30.10:27000/bxr/insurance_account_work/danger/agent/callBack"
+        }
+      }
+    },
+    {
+      "topic": "xrk_test",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_test": {
+          "name": "xrk_test",
+          "callbackUrl": "http://192.168.30.74:5000/api/v1/consumer",
+          "description": "xrk_test##xrk_test##http://192.168.30.74:5000/api/v1/consumer"
+        }
+      }
+    },
+    {
+      "topic": "topic_update_all_job",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "topic_update_all_job##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_send_es_searchinfo_into",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "topic_send_es_searchinfo_into##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_certificate_no_status",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-app-admin-license": {
+          "name": "bxr-app-admin-license",
+          "callbackUrl": "http://192.168.30.10:8021/bxr/admin/mc/notify",
+          "description": "topic_certificate_no_status##bxr-app-admin-license##http://192.168.30.10:8021/bxr/admin/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "bxr_idv_update_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_bss": {
+          "name": "xrk_bss",
+          "callbackUrl": "http://192.168.30.10:3035/acrm/api/v1/agents/idv/message",
+          "description": "bxr_idv_update_success##xrk_bss##http://192.168.30.10:3035/acrm/api/v1/agents/idv/message"
+        }
+      }
+    },
+    {
+      "topic": "new_moment",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "new_moment##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "wallet_freeze_update_notice",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/insurance_account_work/wallet/freeze/callBack",
+          "description": "wallet_freeze_update_notice##bxr-api##http://192.168.30.10:27000/bxr/insurance_account_work/wallet/freeze/callBack"
+        }
+      }
+    },
+    {
+      "topic": "topic_send_email_error_cps",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "mc_default_producer": {
+          "name": "mc_default_producer",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "topic_send_email_error_cps##mc_default_producer##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_batchorder_generate_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "批量单生成订单完成主题": {
+          "name": "批量单生成订单完成主题",
+          "callbackUrl": "http://192.168.31.10:9480/mall/batchOrder/message",
+          "description": "xrk_mall_batchorder_generate_success##批量单生成订单完成主题##http://192.168.31.10:9480/mall/batchOrder/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_bankinfo_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_bankinfo_success##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_openApi_policy_success_notice",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "xrk_openApi_policy_success_notice##xrk-mall-msg##http://192.168.30.10:9480/mall/message/order/sync_elasticsearch"
+        },
+        "xrk-open-api": {
+          "name": "xrk-open-api",
+          "callbackUrl": "http://192.168.30.10:8966/api/v1/open/policy_monitor",
+          "description": "xrk_openApi_policy_success_notice##xrk-open-api##http://192.168.30.10:8966/api/v1/open/policy_monitor"
+        },
+        "xrk_customer_backend": {
+          "name": "xrk_customer_backend",
+          "callbackUrl": "http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/new_orders",
+          "description": "xrk_openApi_policy_success_notice##xrk_customer_backend##http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/new_orders"
+        }
+      }
+    },
+    {
+      "topic": "xrk_claims_workbenchs_msg",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "service_api": {
+          "name": "service_api",
+          "callbackUrl": "http://192.168.30.79:3033/api/v1//workbench_msgs/success",
+          "description": "xrk_claims_workbenchs_msg##service_api##http://192.168.30.79:3033/api/v1//workbench_msgs/success"
+        }
+      }
+    },
+    {
+      "topic": "poster_changed",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "poster_changed##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_wallet_trade_correct",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_wallet_msg_trade_correct": {
+          "name": "xrk_wallet_msg_trade_correct",
+          "callbackUrl": "http://192.168.31.10:8952/wallet/message",
+          "description": "xrk_wallet_trade_correct##xrk_wallet_msg_trade_correct##http://192.168.31.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "bms_update_level",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr_membership_service_consumer": {
+          "name": "bxr_membership_service_consumer",
+          "callbackUrl": "http://192.168.30.10:3075/membership/comsume/message",
+          "description": "bms_update_level##bxr_membership_service_consumer##http://192.168.30.10:3075/membership/comsume/message"
+        },
+        "xrk-wallet-msg_bms_update_level": {
+          "name": "xrk-wallet-msg_bms_update_level",
+          "callbackUrl": "http://192.168.30.10:8952/wallet/message",
+          "description": "bms_update_level##xrk-wallet-msg_bms_update_level##http://192.168.30.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_free_tax",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api-free-tax": {
+          "name": "bxr-api-free-tax",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "topic_free_tax##bxr-api-free-tax##http://192.168.30.10:27000/bxr/mc/notify"
+        },
+        "xrk-wallet-msg_freetax": {
+          "name": "xrk-wallet-msg_freetax",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "topic_free_tax##xrk-wallet-msg_freetax##http://192.168.30.10:7060/tags/mc/notify"
+        },
+        "a_crm_admin": {
+          "name": "a_crm_admin",
+          "callbackUrl": "http://192.168.30.10:3035/acrm/api/v1/agents/freetax/message",
+          "description": "topic_free_tax##a_crm_admin##http://192.168.30.10:3035/acrm/api/v1/agents/freetax/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_groupon_app_invoice_work_order",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "service-api-prod": {
+          "name": "service-api-prod",
+          "callbackUrl": "http://192.168.30.10:3033/api/v1/invoice/success",
+          "description": "xrk_groupon_app_invoice_work_order##service-api-prod##http://192.168.30.10:3033/api/v1/invoice/success"
+        }
+      }
+    },
+    {
+      "topic": "quanliang_callback_notify",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {}
+    },
+    {
+      "topic": "reader_admin_pre_update_article_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "reader-api": {
+          "name": "reader-api",
+          "callbackUrl": "http://192.168.30.10:27000/reader/mc/callback",
+          "description": "reader_admin_pre_update_article_success##reader-api##http://192.168.30.10:27000/reader/mc/callback"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_surrender_callback_send_email",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_surrender_callback_send_email##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_wallet_reconciliation_request",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_wallet_withdraw_consumer": {
+          "name": "xrk_wallet_withdraw_consumer",
+          "callbackUrl": "http://192.168.31.10:8953/wallet/withdraw/consume",
+          "description": "xrk_wallet_reconciliation_request##xrk_wallet_withdraw_consumer##http://192.168.31.10:8953/wallet/withdraw/consume"
+        }
+      }
+    },
+    {
+      "topic": "logions_rerank",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "logions_rerank##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_issue_policy_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "cpm-api": {
+          "name": "cpm-api",
+          "callbackUrl": "http://192.168.30.10:7024/mc/notify",
+          "description": "xrk_mall_issue_policy_success##cpm-api##http://192.168.30.10:7024/mc/notify"
+        },
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message/order/sync_elasticsearch",
+          "description": "xrk_mall_issue_policy_success##xrk-mall-msg##http://192.168.30.10:9480/mall/message/order/sync_elasticsearch"
+        },
+        "xrk-order-api": {
+          "name": "xrk-order-api",
+          "callbackUrl": "http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc",
+          "description": "xrk_mall_issue_policy_success##xrk-order-api##http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc"
+        },
+        "xrk_customer_backend": {
+          "name": "xrk_customer_backend",
+          "callbackUrl": "http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/new_orders",
+          "description": "xrk_mall_issue_policy_success##xrk_customer_backend##http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/new_orders"
+        },
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:8940/api/v1/order_renewal/save_renewal_pay_time_record",
+          "description": "xrk_mall_issue_policy_success##xrk-mall##http://192.168.31.10:8940/api/v1/order_renewal/save_renewal_pay_time_record"
+        },
+        "a_crm_scheduler": {
+          "name": "a_crm_scheduler",
+          "callbackUrl": "http://192.168.30.10:3037/acrm/scheduler/api/v1/mall/message/payment/success",
+          "description": "xrk_mall_issue_policy_success##a_crm_scheduler##http://192.168.30.10:3037/acrm/scheduler/api/v1/mall/message/payment/success"
+        },
+        "xrk-mall-msg_policy-email": {
+          "name": "xrk-mall-msg_policy-email",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_issue_policy_success##xrk-mall-msg_policy-email##http://192.168.31.10:9480/mall/message"
+        },
+        "bxr-promote-web-prod": {
+          "name": "bxr-promote-web-prod",
+          "callbackUrl": "http://192.168.31.10:8023/invitation/order/policy_monitor",
+          "description": "xrk_mall_issue_policy_success##bxr-promote-web-prod##http://192.168.31.10:8023/invitation/order/policy_monitor"
+        },
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "xrk_mall_issue_policy_success##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "XRK_NEW_USER",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-promote-invitation": {
+          "name": "bxr-promote-invitation",
+          "callbackUrl": "http://192.168.30.10:8023/invitation/callBackRegister",
+          "description": "XRK_NEW_USER##bxr-promote-invitation##http://192.168.30.10:8023/invitation/callBackRegister"
+        },
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "XRK_NEW_USER##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        },
+        "xrk_tags": {
+          "name": "xrk_tags",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "XRK_NEW_USER##xrk_tags##http://192.168.30.10:7060/tags/mc/notify"
+        },
+        "xrk-sale-task-api": {
+          "name": "xrk-sale-task-api",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/activity/recruit/register_callback",
+          "description": "XRK_NEW_USER##xrk-sale-task-api##http://192.168.30.10:8931/api/v1/activity/recruit/register_callback"
+        },
+        "drp-register-distributor": {
+          "name": "drp-register-distributor",
+          "callbackUrl": "http://192.168.30.10:8908/api/v1/distributor/register",
+          "description": "XRK_NEW_USER##drp-register-distributor##http://192.168.30.10:8908/api/v1/distributor/register"
+        }
+      }
+    },
+    {
+      "topic": "xrk_claims_create_succ",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_crm": {
+          "name": "xrk_crm",
+          "callbackUrl": "http://192.168.30.79:3033/api/v1/claims/success",
+          "description": "xrk_claims_create_succ##xrk_crm##http://192.168.30.79:3033/api/v1/claims/success"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_order_ocr_send_image",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_order_ocr_send_image##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_union_pay_fail",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_mall_msg_consumer": {
+          "name": "xrk_mall_msg_consumer",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_union_pay_fail##xrk_mall_msg_consumer##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_underwriting_order_result",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "xrk_mall_underwriting_order_result##xrk-mall-msg##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_surrender_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "cpm-api": {
+          "name": "cpm-api",
+          "callbackUrl": "http://192.168.30.10:7024/mc/notify",
+          "description": "xrk_mall_surrender_success##cpm-api##http://192.168.30.10:7024/mc/notify"
+        },
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message/order/sync_elasticsearch",
+          "description": "xrk_mall_surrender_success##xrk-mall-msg##http://192.168.30.10:9480/mall/message/order/sync_elasticsearch"
+        },
+        "xrk-order-api": {
+          "name": "xrk-order-api",
+          "callbackUrl": "http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc",
+          "description": "xrk_mall_surrender_success##xrk-order-api##http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc"
+        },
+        "xrk-sale-task-api-prod": {
+          "name": "xrk-sale-task-api-prod",
+          "callbackUrl": "http://192.168.31.10:8931/api/v1/users/sale/tasks/order/cancel",
+          "description": "xrk_mall_surrender_success##xrk-sale-task-api-prod##http://192.168.31.10:8931/api/v1/users/sale/tasks/order/cancel"
+        },
+        "xrk_activity_center_surrender": {
+          "name": "xrk_activity_center_surrender",
+          "callbackUrl": "http://192.168.31.10:8931/api/v1/users/surrender/active/order/cancel",
+          "description": "xrk_mall_surrender_success##xrk_activity_center_surrender##http://192.168.31.10:8931/api/v1/users/surrender/active/order/cancel"
+        },
+        "xrk_customer_backend": {
+          "name": "xrk_customer_backend",
+          "callbackUrl": "http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/cancel_orders",
+          "description": "xrk_mall_surrender_success##xrk_customer_backend##http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/cancel_orders"
+        },
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_surrender_success##xrk-mall##http://192.168.31.10:9480/mall/message"
+        },
+        "a_crm_scheduler": {
+          "name": "a_crm_scheduler",
+          "callbackUrl": "http://192.168.30.10:3037/acrm/scheduler/api/v1/mall/message/payment/cancel",
+          "description": "xrk_mall_surrender_success##a_crm_scheduler##http://192.168.30.10:3037/acrm/scheduler/api/v1/mall/message/payment/cancel"
+        },
+        "bxr-promote-invitation": {
+          "name": "bxr-promote-invitation",
+          "callbackUrl": "http://192.168.30.10:8023/invitation/award/callBackCancel",
+          "description": "xrk_mall_surrender_success##bxr-promote-invitation##http://192.168.30.10:8023/invitation/award/callBackCancel"
+        },
+        "bxr-promote-web-unbox": {
+          "name": "bxr-promote-web-unbox",
+          "callbackUrl": "http://192.168.30.10:8023/unBoxActivity/cancel/callBack",
+          "description": "xrk_mall_surrender_success##bxr-promote-web-unbox##http://192.168.30.10:8023/unBoxActivity/cancel/callBack"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_offline_policy_fail",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_offline_policy_fail##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_send_es_searchinfo_update",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "topic_send_es_searchinfo_update##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "invite_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-sale-task-api_prod": {
+          "name": "xrk-sale-task-api_prod",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/users/sale/tasks/invite/consume",
+          "description": "invite_success##xrk-sale-task-api_prod##http://192.168.30.10:8931/api/v1/users/sale/tasks/invite/consume"
+        }
+      }
+    },
+    {
+      "topic": "xrk_activity_reward_authorize",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-admin": {
+          "name": "xrk-mall-admin",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_activity_reward_authorize##xrk-mall-admin##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_app_group_send_Insurance",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "topic_app_group_send_Insurance##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_lawyer_license_status",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-tags-api": {
+          "name": "xrk-tags-api",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "topic_lawyer_license_status##xrk-tags-api##http://192.168.30.10:7060/tags/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "topic_app_health_report",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "a_crm_scheduler": {
+          "name": "a_crm_scheduler",
+          "callbackUrl": "http://192.168.30.10:3037/acrm/scheduler/api/v1/mall/intelligent/health_report",
+          "description": "topic_app_health_report##a_crm_scheduler##http://192.168.30.10:3037/acrm/scheduler/api/v1/mall/intelligent/health_report"
+        }
+      }
+    },
+    {
+      "topic": "xrk_idv_sale_task_completed",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api-sale-task-complete": {
+          "name": "bxr-api-sale-task-complete",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "xrk_idv_sale_task_completed##bxr-api-sale-task-complete##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_wallet_withdraw_result",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_wallet": {
+          "name": "xrk_wallet",
+          "callbackUrl": "http://192.168.31.10:8952/wallet/message",
+          "description": "xrk_wallet_withdraw_result##xrk_wallet##http://192.168.31.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_wallet_reversal_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-wallet-msg": {
+          "name": "xrk-wallet-msg",
+          "callbackUrl": "http://192.168.31.10:8952/wallet/message",
+          "description": "xrk_wallet_reversal_success##xrk-wallet-msg##http://192.168.31.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_coupon_get_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-coupon-api": {
+          "name": "xrk-coupon-api",
+          "callbackUrl": "http://192.168.31.10:9484/api/v1/coupons/message/get_notification",
+          "description": "xrk_coupon_get_success##xrk-coupon-api##http://192.168.31.10:9484/api/v1/coupons/message/get_notification"
+        }
+      }
+    },
+    {
+      "topic": "reader_admin_create_article_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "reader_admin_create_article_success##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "topic_group_upgrade_notice",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "topic_group_upgrade_notice##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_create_work_order",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "service_api": {
+          "name": "service_api",
+          "callbackUrl": "http://192.168.30.79:3033/api/v1/wos/success",
+          "description": "xrk_create_work_order##service_api##http://192.168.30.79:3033/api/v1/wos/success"
+        }
+      }
+    },
+    {
+      "topic": "cps_renewal_without_xrk",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "cps_renewal_without_xrk##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_issue_policy_handle",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_issue_policy_handle##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_grouporder_policy_fail",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/batchOrder/message",
+          "description": "xrk_mall_grouporder_policy_fail##xrk-mall##http://192.168.31.10:9480/mall/batchOrder/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_pay_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message/order/sync_elasticsearch",
+          "description": "xrk_mall_pay_success##xrk-mall-msg##http://192.168.30.10:9480/mall/message/order/sync_elasticsearch"
+        },
+        "xrk-order-api": {
+          "name": "xrk-order-api",
+          "callbackUrl": "http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc",
+          "description": "xrk_mall_pay_success##xrk-order-api##http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc"
+        },
+        "xrk_customer_backend": {
+          "name": "xrk_customer_backend",
+          "callbackUrl": "http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/new_orders",
+          "description": "xrk_mall_pay_success##xrk_customer_backend##http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/new_orders"
+        },
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_pay_success##xrk-mall##http://192.168.31.10:9480/mall/message"
+        },
+        "bxr-promote-invitation": {
+          "name": "bxr-promote-invitation",
+          "callbackUrl": "http://192.168.30.10:8023/invitation/order/order_pay_success",
+          "description": "xrk_mall_pay_success##bxr-promote-invitation##http://192.168.30.10:8023/invitation/order/order_pay_success"
+        },
+        "bxr-promote-web-unbox": {
+          "name": "bxr-promote-web-unbox",
+          "callbackUrl": "http://192.168.30.10:8023/unBoxActivity/paySuccess/callBack",
+          "description": "xrk_mall_pay_success##bxr-promote-web-unbox##http://192.168.30.10:8023/unBoxActivity/paySuccess/callBack"
+        },
+        "xrk_tags": {
+          "name": "xrk_tags",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "xrk_mall_pay_success##xrk_tags##http://192.168.30.10:7060/tags/mc/notify"
+        },
+        "xrk-sale-task-api-pay-success": {
+          "name": "xrk-sale-task-api-pay-success",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/activity/policy/pay_success",
+          "description": "xrk_mall_pay_success##xrk-sale-task-api-pay-success##http://192.168.30.10:8931/api/v1/activity/policy/pay_success"
+        }
+      }
+    },
+    {
+      "topic": "topic_improt_policy_feedback_to_agent",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "mc_default_producer": {
+          "name": "mc_default_producer",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message",
+          "description": "topic_improt_policy_feedback_to_agent##mc_default_producer##http://192.168.30.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_wallet_trade_authorize",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_wallet_trade_authorize": {
+          "name": "xrk_wallet_trade_authorize",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_wallet_trade_authorize##xrk_wallet_trade_authorize##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_upgraded_group_order_commission_notice",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_upgraded_group_order_commission_notice##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_bankinfo_fail",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_bankinfo_fail##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_tretire_tax_verify",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_financial_admin": {
+          "name": "xrk_financial_admin",
+          "callbackUrl": "http://192.168.31.10:3036/fbss/api/v1/sync_tax_id_card",
+          "description": "topic_tretire_tax_verify##xrk_financial_admin##http://192.168.31.10:3036/fbss/api/v1/sync_tax_id_card"
+        }
+      }
+    },
+    {
+      "topic": "DRP_BASE_COMMISSION_CANCEL",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "sale-task-api-commission-cancel": {
+          "name": "sale-task-api-commission-cancel",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/users/sale/tasks/order_commission/cancel",
+          "description": "DRP_BASE_COMMISSION_CANCEL##sale-task-api-commission-cancel##http://192.168.30.10:8931/api/v1/users/sale/tasks/order_commission/cancel"
+        },
+        "bxr-promote-freshRedPackage": {
+          "name": "bxr-promote-freshRedPackage",
+          "callbackUrl": "http://192.168.30.10:8023/unBoxActivity/cancel/baseCommission",
+          "description": "DRP_BASE_COMMISSION_CANCEL##bxr-promote-freshRedPackage##http://192.168.30.10:8023/unBoxActivity/cancel/baseCommission"
+        },
+        "xrk-drpx-api": {
+          "name": "xrk-drpx-api",
+          "callbackUrl": "http://192.168.31.10:8980/api/v1/m_commission_trades/add/message",
+          "description": "DRP_BASE_COMMISSION_CANCEL##xrk-drpx-api##http://192.168.31.10:8980/api/v1/m_commission_trades/add/message"
+        },
+        "sale-activity-commission-cancel": {
+          "name": "sale-activity-commission-cancel",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/activity/policy/commission_monitor/cancel",
+          "description": "DRP_BASE_COMMISSION_CANCEL##sale-activity-commission-cancel##http://192.168.30.10:8931/api/v1/activity/policy/commission_monitor/cancel"
+        },
+        "bxr-promote-first-order": {
+          "name": "bxr-promote-first-order",
+          "callbackUrl": "http://192.168.30.10:8023/freshRedPackageActivity/baseCommission/reward_cancel/202003",
+          "description": "DRP_BASE_COMMISSION_CANCEL##bxr-promote-first-order##http://192.168.30.10:8023/freshRedPackageActivity/baseCommission/reward_cancel/202003"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_batch_expired_pay_send_cs_email",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_batch_expired_pay_send_cs_email##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_sale_task_complete_to_proceed",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "sale_task": {
+          "name": "sale_task",
+          "callbackUrl": "http://192.168.31.10:8931/api/v1/users/sale/tasks/complete_to_proceed",
+          "description": "xrk_sale_task_complete_to_proceed##sale_task##http://192.168.31.10:8931/api/v1/users/sale/tasks/complete_to_proceed"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_grouporder_policy_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/batchOrder/message",
+          "description": "xrk_mall_grouporder_policy_success##xrk-mall##http://192.168.31.10:9480/mall/batchOrder/message"
+        }
+      }
+    },
+    {
+      "topic": "reader_admin_pre_recommend_app_article",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "reader-api": {
+          "name": "reader-api",
+          "callbackUrl": "http://192.168.30.10:27000/reader/mc/callback",
+          "description": "reader_admin_pre_recommend_app_article##reader-api##http://192.168.30.10:27000/reader/mc/callback"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_upgraded_group_order_notice",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message/order/sync_elasticsearch",
+          "description": "xrk_mall_upgraded_group_order_notice##xrk-mall-msg##http://192.168.30.10:9480/mall/message/order/sync_elasticsearch"
+        },
+        "xrk-mall-msg_upgrade-notice": {
+          "name": "xrk-mall-msg_upgrade-notice",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_upgraded_group_order_notice##xrk-mall-msg_upgrade-notice##http://192.168.31.10:9480/mall/message"
+        },
+        "xrk_customer_backend": {
+          "name": "xrk_customer_backend",
+          "callbackUrl": "http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/new_orders",
+          "description": "xrk_mall_upgraded_group_order_notice##xrk_customer_backend##http://192.168.30.10:3039/customer_backend/api/v1/ref_orders_refund/new_orders"
+        }
+      }
+    },
+    {
+      "topic": "TOPIC_COMMISSION_MAIN_FAIL",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "TOPIC_COMMISSION_MAIN_FAIL##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_certificate_xrk_audit",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_activity_center_lawyer": {
+          "name": "xrk_activity_center_lawyer",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/activity/policy/lawyer_license_monitor",
+          "description": "topic_certificate_xrk_audit##xrk_activity_center_lawyer##http://192.168.30.10:8931/api/v1/activity/policy/lawyer_license_monitor"
+        },
+        "xrk-tags-api": {
+          "name": "xrk-tags-api",
+          "callbackUrl": "http://192.168.30.10:7060/tags/mc/notify",
+          "description": "topic_certificate_xrk_audit##xrk-tags-api##http://192.168.30.10:7060/tags/mc/notify"
+        },
+        "bxr-promote-web": {
+          "name": "bxr-promote-web",
+          "callbackUrl": "http://192.168.30.10:8023/invitation/certificate_change/call_back",
+          "description": "topic_certificate_xrk_audit##bxr-promote-web##http://192.168.30.10:8023/invitation/certificate_change/call_back"
+        },
+        "sale-task-api-sign-lawyer": {
+          "name": "sale-task-api-sign-lawyer",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/users/sale/tasks/sign_lawyer",
+          "description": "topic_certificate_xrk_audit##sale-task-api-sign-lawyer##http://192.168.30.10:8931/api/v1/users/sale/tasks/sign_lawyer"
+        },
+        "xrk-wallet-msg_certificate_xrk_audit": {
+          "name": "xrk-wallet-msg_certificate_xrk_audit",
+          "callbackUrl": "http://192.168.30.10:8952/wallet/message",
+          "description": "topic_certificate_xrk_audit##xrk-wallet-msg_certificate_xrk_audit##http://192.168.30.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_app_send_wechat",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "topic_app_send_wechat##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_cps_order_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "mc_default_producer": {
+          "name": "mc_default_producer",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message/order/sync_elasticsearch",
+          "description": "xrk_mall_cps_order_success##mc_default_producer##http://192.168.30.10:9480/mall/message/order/sync_elasticsearch"
+        }
+      }
+    },
+    {
+      "topic": "posters_rerank",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api": {
+          "name": "bxr-api",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "posters_rerank##bxr-api##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "xrk_wallet_withdraw_request",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_wallet_withdraw_consumer": {
+          "name": "xrk_wallet_withdraw_consumer",
+          "callbackUrl": "http://192.168.31.10:8953/wallet/withdraw/consume",
+          "description": "xrk_wallet_withdraw_request##xrk_wallet_withdraw_consumer##http://192.168.31.10:8953/wallet/withdraw/consume"
+        }
+      }
+    },
+    {
+      "topic": "m_license_auth_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "m_xrk_activity_center_lawyer": {
+          "name": "m_xrk_activity_center_lawyer",
+          "callbackUrl": "http://192.168.30.10:8931/api/v1/activity/policy/lawyer_license_monitor_m",
+          "description": "m_license_auth_success##m_xrk_activity_center_lawyer##http://192.168.30.10:8931/api/v1/activity/policy/lawyer_license_monitor_m"
+        },
+        "xrk-wallet-msg": {
+          "name": "xrk-wallet-msg",
+          "callbackUrl": "http://192.168.30.10:8952/wallet/message",
+          "description": "m_license_auth_success##xrk-wallet-msg##http://192.168.30.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_close_order_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-order-api": {
+          "name": "xrk-order-api",
+          "callbackUrl": "http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc",
+          "description": "xrk_mall_close_order_success##xrk-order-api##http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc"
+        }
+      }
+    },
+    {
+      "topic": "xrk_wallet_trade_reversal",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_wallet": {
+          "name": "xrk_wallet",
+          "callbackUrl": "http://192.168.31.10:8952/wallet/message",
+          "description": "xrk_wallet_trade_reversal##xrk_wallet##http://192.168.31.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_ticket_reward_authorize",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_ticket_reward_authorize##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "topic_identity_card_photo_audit",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-wallet-msg_idcard_audit": {
+          "name": "xrk-wallet-msg_idcard_audit",
+          "callbackUrl": "http://192.168.31.10:8952/wallet/message",
+          "description": "topic_identity_card_photo_audit##xrk-wallet-msg_idcard_audit##http://192.168.31.10:8952/wallet/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_order_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.30.10:9480/mall/message/order/sync_elasticsearch",
+          "description": "xrk_mall_order_success##xrk-mall-msg##http://192.168.30.10:9480/mall/message/order/sync_elasticsearch"
+        },
+        "xrk-order-api": {
+          "name": "xrk-order-api",
+          "callbackUrl": "http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc",
+          "description": "xrk_mall_order_success##xrk-order-api##http://192.168.30.10:8940/api/v1/order/handle_merchant_order_mc"
+        },
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_order_success##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_idv_career_bouns_notification_params",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "bxr-api-idv-bonus": {
+          "name": "bxr-api-idv-bonus",
+          "callbackUrl": "http://192.168.30.10:27000/bxr/mc/notify",
+          "description": "xrk_idv_career_bouns_notification_params##bxr-api-idv-bonus##http://192.168.30.10:27000/bxr/mc/notify"
+        }
+      }
+    },
+    {
+      "topic": "policy_without_pay_alarm",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall-msg": {
+          "name": "xrk-mall-msg",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "policy_without_pay_alarm##xrk-mall-msg##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_mall_unpaid_notice",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "xrk_mall_unpaid_notice##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    },
+    {
+      "topic": "xrk_sale_task_activity_surrender_monitor_success",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "a_crm_scheduler": {
+          "name": "a_crm_scheduler",
+          "callbackUrl": "http://192.168.30.10:3037/acrm/scheduler/api/v1/mc/message/activity",
+          "description": "xrk_sale_task_activity_surrender_monitor_success##a_crm_scheduler##http://192.168.30.10:3037/acrm/scheduler/api/v1/mc/message/activity"
+        }
+      }
+    },
+    {
+      "topic": "TOPIC_COMMISSION_CALCULATE",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk_drp": {
+          "name": "xrk_drp",
+          "callbackUrl": "http://192.168.30.10:8905/mc/commission/calculate",
+          "description": "TOPIC_COMMISSION_CALCULATE##xrk_drp##http://192.168.30.10:8905/mc/commission/calculate"
+        }
+      }
+    },
+    {
+      "topic": "topic_group_correct_nopass_notic_agent",
+      "producer": {
+        "name": "mc_default_producer"
+      },
+      "consumers": {
+        "xrk-mall": {
+          "name": "xrk-mall",
+          "callbackUrl": "http://192.168.31.10:9480/mall/message",
+          "description": "topic_group_correct_nopass_notic_agent##xrk-mall##http://192.168.31.10:9480/mall/message"
+        }
+      }
+    }
+  ],
+  "ret_code": 22100000
+}

@@ -1,0 +1,38 @@
+{
+  "is_success": "*cv*|boolean|(messageStatusCode==#000000#)&&(data.policyStatus==#2#)",
+  "fail_reason": "*cv*|String|messageStatusDescriptionList[0].messageStatusSubDescription",
+  "order_no": "*cv*|String|call().getThread(#order_no#)",
+  "group_type": "personal",
+  "total_prem": null,
+  "proposal_no": null,
+  "policy_no": null,
+  "policies": [
+    {
+      "is_success": "*cv*|boolean|(messageStatusCode==#000000#)&&(data.policyStatus==#2#)",
+      "fail_reason": "*cv*|String|messageStatusDescriptionList[0].messageStatusSubDescription",
+      "policy_date": null,
+      "policy_no": "*cv*|String|data.policyNo",
+      "policy_status": null,
+      "account_date": null,
+      "proposal_no": "*cv*|String|data.applyNo",
+      "prem": "",
+      "policy_url": null,
+      "policy_begin_date": null,
+      "policy_end_date": null,
+      "pay_to_date": null,
+      "note": null,
+      "insured_num": null,
+      "client_no": null,
+      "fullname": null,
+      "pdfInfo": null,
+      "biz_status": null,
+      "sub_policy": null,
+      "renewal_no": null,
+      "insNo": null,
+      "pay_no": null
+    }
+  ],
+  "extras": null,
+  "order_item_no": null,
+  "biz_status": null
+}

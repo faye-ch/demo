@@ -1,0 +1,41 @@
+{
+  "amount": 138000,
+  "extend_params": {
+    "schoolName": "开发区沙王小学",
+    "FieldAC": "1"
+  },
+  "paymentPlan": "0",
+  "payPlanByChannel": "0",
+  "insured": [
+    {
+      "birthday": "2010-10-26",
+      "itemprovincecode": "370000",
+      "sex": "1",
+      "occupation_code": "01101003",
+      "name": "李昶泽",
+      "certi_type": "01",
+      "type": "1",
+      "itemcitycode": "371400",
+      "certi_no": "371421201010266339",
+      "relation": "40",
+      "itemdistrictcode": "371402"
+    }
+  ],
+  "endDate": "2020-12-20 23:59:59",
+  "sPaymentPlanInfoList": {},
+  "applicant": {
+    "birthday": "1985-08-20",
+    "phone": "13791312596",
+    "sex": "2",
+    "name": "马彦",
+    "certi_type": "01",
+    "type": "1",
+    "certi_no": "371421198508204624",
+    "email": "3123594967@qq.com"
+  },
+  "premium": 69,
+  "annualPayment": "1",
+  "product_id": "1122A09904",
+  "issueDate": "2020-12-22 16:47:32",
+  "startDate": "2019-12-21 00:00:00"
+}
