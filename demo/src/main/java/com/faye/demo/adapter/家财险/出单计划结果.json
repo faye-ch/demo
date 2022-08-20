@@ -1,0 +1,9 @@
+{
+  "is_success": "*cv*|Boolean|resultCode>>{FAILED=>false,SUCCEEDED=>true}",
+  "fail_reason": "*cv*|string|message",
+  "ret": null,
+  "date": {
+    "productCode": "*cv*|string|productCode"
+  },
+  "msg": null
+}

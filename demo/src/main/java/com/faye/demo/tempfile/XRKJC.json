@@ -1,0 +1,26 @@
+{
+  "url": "",
+  "new_order":"0",
+  "insured_notice": 0,
+  "cooling_off": 0,
+  "bid": "1702P_XB",
+  "pid": "ZA_ZABX_0037",
+  "job_level": "",
+  "policy_date": {
+    "type": "relative",
+    "begin": 1,
+    "end": "30"
+  },
+  "insured_relation": {
+    "type": "seller_no",
+    "data": ["本人"
+    ]
+  },
+  "appendInfo":[
+    {"code":"houseInfo","name":"保障房屋信息",
+      "attr":[
+        {"en_name":"houseAddress","name":"房屋所在地","type":"select","current_data":""},
+        {"en_name":"houseRightHolder","name":"你是房屋的","type":"select","current_data":{"key":"1","value":"房主"},"values":{"options":[{"key":"1","value":"房主"},{"key":"2","value":"房主直系亲属"},{"key":"3","value":"租户"}]}}
+      ]}
+  ]
+}

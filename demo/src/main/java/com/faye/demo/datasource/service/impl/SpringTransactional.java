@@ -1,49 +1,36 @@
 package com.faye.demo.datasource.service.impl;
 
 import com.faye.demo.datasource.dao.ProductSampleNeedMapper;
-import com.faye.demo.datasource.dbswitch.Db;
-import com.faye.demo.datasource.dbswitch.DbType;
 import com.faye.demo.datasource.entity.ProductSampleNeed;
-import com.faye.demo.datasource.service.api.IProductSampleNeedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
-import java.util.List;
 
-/*
- * @Author cyf
- * @Description
- * @Date 2022/1/14
- **/
 @Service
-public class ProductSampleNeedServiceImpl  implements IProductSampleNeedService {
+public class SpringTransactional {
     
     @Autowired
     private ProductSampleNeedMapper mapper;
-
-    @Db(value = DbType.SLAVE)
-    @Override
-    public ProductSampleNeed getById(Long id) {
-        ProductSampleNeed need = null;
-        try{
-            need = mapper.getById(id);
-        }catch (Exception e){
-            e.printStackTrace();
+    @Autowired
+    private SpringTransactional service;
+    
+    public void insert(){
+        service.doubleInsert();
+        if (true){
+            throw new RuntimeException();
         }
-        return need;
-    }
-
-    @Override
-    @Db(value = DbType.SLAVE)
-    public List<ProductSampleNeed> getByList() {
-        return mapper.selectOneTable();
-    }
-
-    @Override
-    public void insert() {
         ProductSampleNeed build = build();
+        mapper.insert(build);
+    }
+    
+    @Transactional
+    public void doubleInsert(){
+        ProductSampleNeed need1 = build();
+        ProductSampleNeed need2 = build();
+        mapper.insert(need1);
+        mapper.insert(need2);
         
     }
 
@@ -67,4 +54,5 @@ public class ProductSampleNeedServiceImpl  implements IProductSampleNeedService 
         need.setBeginTime(now);
         return need;
     }
+    
 }

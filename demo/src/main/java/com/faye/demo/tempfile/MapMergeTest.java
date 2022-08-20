@@ -1,4 +1,4 @@
-package com.faye.demo.temfile;
+package com.faye.demo.tempfile;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Maps;

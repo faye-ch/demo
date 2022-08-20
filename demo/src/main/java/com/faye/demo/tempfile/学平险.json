@@ -1,0 +1,278 @@
+[
+  {
+    "plan_info": {
+      "items": [
+        {
+          "en_name": "policy_begin_date",
+          "name": "起保日期",
+          "object_type": "product",
+          "type": "fixed"
+        },
+        {
+          "en_name": "insured_relation",
+          "name": "被保人是投保人",
+          "default_value":"本人",
+          "object_type": "insured",
+          "type": "select",
+          "values": {
+            "option": ["本人","子女"]
+          }
+        }
+      ],
+      "name": "投保维度信息"
+    }
+  },
+  {
+    "applier_insured_self": {
+      "items": [
+        {
+          "prompt_content":"请输入",
+          "en_name": "name",
+          "name": "姓名",
+          "object_type": "insured",
+          "type": "text"
+        },
+        {
+          "en_name": "certification_type",
+          "name": "证件类型",
+          "object_type": "insured",
+          "type": "option",
+          "values": {
+            "option": [
+              "身份证"
+            ]
+          }
+        },
+        {
+          "prompt_content":"请输入",
+          "en_name": "certification_no",
+          "name": "证件号码",
+          "object_type": "insured",
+          "type": "text"
+        },
+        {
+          "current_data": "1999-06-20",
+          "en_name": "birthday",
+          "name": "出生日期",
+          "object_type": "insured",
+          "type": "date",
+          "values": {
+            "range": [
+              "/000/00/29",
+              "/074/00/364"
+            ]
+          }
+        },
+        {
+          "en_name": "sex",
+          "name": "性别",
+          "object_type": "insured",
+          "type": "option",
+          "values": {
+            "option": [
+              "男",
+              "女"
+            ]
+          }
+        },
+        {
+          "prompt_content":"请输入",
+          "en_name": "mobile",
+          "name": "手机号码",
+          "object_type": "insured",
+          "type": "phone"
+        },
+        {
+          "prompt_content":"此邮箱将用于接收电子保单",
+          "en_name": "email",
+          "name": "电子邮箱",
+          "object_type": "insured",
+          "type": "email"
+        },
+        {
+          "current_data": "北京市-北京市",
+          "en_name": "P_C_A",
+          "name": "投保地区",
+          "object_type": "insured",
+          "type": "province_city_area"
+        }
+      ],
+      "name": "投被保人信息",
+      "peroid": "9999-12-31"
+    }
+  },
+  {
+    "applier": {
+      "items": [
+        {
+          "prompt_content":"请输入",
+          "en_name": "name",
+          "name": "投保人姓名",
+          "object_type": "applier",
+          "type": "text"
+        },
+        {
+          "en_name": "certification_type",
+          "name": "证件类型",
+          "object_type": "applier",
+          "type": "option",
+          "values": {
+            "option": [
+              "身份证"
+            ]
+          }
+        },
+        {
+          "prompt_content":"请输入",
+          "en_name": "certification_no",
+          "name": "证件号码",
+          "object_type": "applier",
+          "type": "text"
+        },
+        {
+          "current_data": "1999-06-20",
+          "en_name": "birthday",
+          "name": "出生日期",
+          "object_type": "applier",
+          "type": "date",
+          "values": {
+            "range": [
+              "/000/00/29",
+              "/074/00/364"
+            ]
+          }
+        },
+        {
+          "en_name": "sex",
+          "name": "性别",
+          "object_type": "applier",
+          "type": "option",
+          "values": {
+            "option": [
+              "男",
+              "女"
+            ]
+          }
+        },
+        {
+          "prompt_content":"请输入",
+          "en_name": "mobile",
+          "name": "手机号码",
+          "object_type": "applier",
+          "type": "phone"
+        },
+        {
+          "prompt_content":"此邮箱将用于接收电子保单",
+          "en_name": "email",
+          "name": "电子邮箱",
+          "object_type": "applier",
+          "type": "email"
+        },
+        {
+          "current_data": "北京市-北京市",
+          "en_name": "P_C_A",
+          "name": "投保地区",
+          "object_type": "applier",
+          "type": "province_city_area"
+        }
+      ],
+      "name": "投保人信息",
+      "peroid": "9999-12-31"
+    }
+  },
+  {
+    "insured": {
+      "items": [
+        {
+          "prompt_content":"请输入",
+          "en_name": "name",
+          "name": "被保人姓名",
+          "object_type": "insured",
+          "type": "text"
+        },
+        {
+          "en_name": "certification_type",
+          "name": "证件类型",
+          "object_type": "insured",
+          "type": "option",
+          "values": {
+            "option": [
+              "身份证",
+              "户口簿"
+            ]
+          }
+        },
+        {
+          "prompt_content":"请输入",
+          "en_name": "certification_no",
+          "name": "证件号码",
+          "object_type": "insured",
+          "type": "text"
+        },
+        {
+          "current_data": "1999-06-20",
+          "en_name": "birthday",
+          "name": "出生日期",
+          "object_type": "insured",
+          "type": "date",
+          "values": {
+            "range": [
+              "/000/00/29",
+              "/074/00/364"
+            ]
+          }
+        },
+        {
+          "en_name": "sex",
+          "name": "性别",
+          "object_type": "insured",
+          "type": "option",
+          "values": {
+            "option": [
+              "男",
+              "女"
+            ]
+          }
+        },
+        {
+          "current_data": "北京市-北京市",
+          "en_name": "P_C_A",
+          "name": "投保地区",
+          "object_type": "insured",
+          "type": "province_city_area"
+        }
+      ],
+      "name": "被保人信息",
+      "peroid": "9999-12-31"
+    }
+  },
+  {
+    "benifit_info": {
+      "default": [
+        {
+          "items": [
+            {
+              "en_name": "name",
+              "name": "受益人",
+              "type": "select",
+              "values": {
+                "option": [
+                  "法定受益人"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "model": {
+        "items": [
+
+        ]
+      },
+      "name": "受益人信息",
+      "showmodel": true,
+      "model_add_limit": 2,
+      "peroid": "9999-12-31"
+    }
+  }
+]

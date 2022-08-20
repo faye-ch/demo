@@ -14,5 +14,7 @@ public interface IProductSampleNeedService {
     ProductSampleNeed getById(Long id);
 
     List<ProductSampleNeed> getByList();
+    
+    void insert();
 
 }

@@ -1,4 +1,4 @@
-package com.faye.demo.temfile;
+package com.faye.demo.tempfile;
 
 import com.alibaba.fastjson.JSONObject;
 
@@ -14,6 +14,9 @@ public class JsonToBean {
         System.out.println(req.getString("terminateTime"));
         System.out.println(req.getString("groupPolicyNo"));
         System.out.println(req.getString("insuredRefundPremium"));
+
+        String property = System.getProperty("user.dir");
+        System.out.println(property);
     }
 
 }

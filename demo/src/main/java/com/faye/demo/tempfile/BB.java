@@ -1,4 +1,4 @@
-package com.faye.demo.temfile;
+package com.faye.demo.tempfile;
 
 /**
  * <br>==========================
@@ -9,5 +9,5 @@ package com.faye.demo.temfile;
  * <br> JDK版本：1.8
  * <br>==========================
  */
-public class branchA {
+public class BB {
 }

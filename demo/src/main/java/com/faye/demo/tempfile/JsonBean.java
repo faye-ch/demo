@@ -1,4 +1,4 @@
-package com.faye.demo.temfile;
+package com.faye.demo.tempfile;
 
 import lombok.Getter;
 import lombok.Setter;

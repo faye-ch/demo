@@ -9,7 +9,9 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.beans.Transient;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
@@ -161,6 +163,13 @@ public class test {
     public void dyDbTest(){
         ProductSampleNeed byId = service.getById(1L);
         System.out.println();
+    }
+    
+    @Test
+    public void strTest(){
+        String s1 = "xx";
+        s1 = s1+"bb";
+        System.out.println(s1);
     }
 
 }
