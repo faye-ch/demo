@@ -1,9 +1,0 @@
-{
-  "appKey": "*cv*|String|call(CallService).getConfig(#zabx.appKey#)",
-  "serviceName": "zhongan.open.individual.generic.getProductCode",
-  "timestamp": "*cv*|String|call().nowTimestamp()",
-  "bizContent": "{encryptedMsg}",
-  "signType": "RAS",
-  "charset": "UTF-8",
-  "version": "*cv*|String|call(CallService).getConfig(#zabx.gateway.version#)"
-}

@@ -1,8 +1,0 @@
-{
-  "appKey": "*cv*|String|call(CallService).getConfig(#dhbx.appKey#)",
-  "bizContent": "{encryptedMsg}",
-  "encryptType": "RSA",
-  "serviceName": "xrikui.EpolicyQuery",
-  "timestamp": "*cv*|String|call().nowTimestamp()",
-  "version": "*cv*|String|call(CallService).getConfig(#dhbx.gateway.version#)"
-}

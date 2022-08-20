@@ -1,9 +1,0 @@
-{
-  "charset":"UTF-8",
-  "sign":"AFMtSmLhYJxlclYkh7je7gqDwTrauyoJtPCn14WW0XrqPROVIwI1RnUTIc/hG2AMZS9Td8wpwH7JMPqTj25/eYYM+EDn94cuwQmnXM3SBRgPY6fVlD+oD4YbvbUFSJuAZctzUgwwX+W9ztOb5rGXg+oZxlocq9Y++2I3bkXsOHo=",
-  "bizContent":{
-    "traceId":"2022081714003310133944205RARVGKF",
-    "resultCode":"FAILED",
-    "messageCode":"200001",
-    "message":"参数不合法：[transHolder/insureds/element] MVELRuleEvalResult, matched=false, providerName=dataRules, ruleName=insuredInfoNotEmpty, text=",
-    "channelCode":"EY3AZ38"},"format":"json","signType":"RSA","timestamp":"20220817140033283"}
